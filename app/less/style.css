@@ -23,6 +23,8 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #fff;
+  /*burger made start*/
+  /*burger made end*/
   /*header start*/
   /*header end*/
   /*section about us start*/
@@ -35,6 +37,42 @@ body {
   /*section perfection ingredients  end*/
   /*section counter  start*/
   /*section counter   end*/
+  /*section social  start*/
+  /*section social    end*/
+}
+body .button_made_burgers {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+  border: none;
+  outline: none;
+  background-color: #6D4C41;
+  position: fixed;
+  top: 80%;
+  z-index: 100;
+  cursor: pointer;
+  height: 60px;
+  border-radius: 30px;
+}
+body .button_made_burgers span {
+  border-radius: 50%;
+  width: 60px;
+  height: 50px;
+  margin: 0 4%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .button_made_burgers span img {
+  width: 70%;
+}
+body .button_made_burgers p {
+  color: #fff;
+  font-family: Passion One, cursive;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 body header {
   background-image: url("../img/bg.png");
@@ -55,7 +93,7 @@ body header .header_top nav {
   justify-content: flex-end;
 }
 body header .header_top nav .header_top_nav {
-  width: 55%;
+  width: 65%;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -153,7 +191,7 @@ body header .header_body .sl .slick-dots {
   left: 59%;
   list-style: none;
   text-align: center;
-  bottom: 28%;
+  bottom: 25%;
   z-index: 5;
 }
 body header .header_body .sl .slick-dots li {
@@ -163,13 +201,15 @@ body header .header_body .sl .slick-dots li button {
   border-radius: 50%;
   width: 5px;
   height: 5px;
-  background-color: #5D4037;
+  background-color: #fff;
+  opacity: 0.6;
 }
 body header .header_body .sl .slick-dots li button::before {
   content: '';
 }
 body header .header_body .sl .slick-dots .slick-active button {
-  background-color: #6D4C41;
+  background-color: #fff;
+  opacity: 1;
 }
 body header .header_body .slick-dotted.slick-slider {
   margin-bottom: 0;
@@ -335,6 +375,7 @@ body main .menu_wrapper .menu_wrapper_buttons {
   padding: 1%  0;
 }
 body main .menu_wrapper .menu_wrapper_buttons .menu_wrapper_buttons_button {
+  outline: none;
   padding: 1% 5%;
   background-color: #fff;
   text-transform: uppercase;
@@ -846,13 +887,14 @@ body main .menu_wrapper .menu_wrapper_drinks_slider .menu_wrapper_drinks_slider_
 body main .menu_wrapper .menu_wrapper_drinks_slider.active {
   display: flex;
 }
-body main .menu_wrapper .menu_wrapper_load_buttons {
+body main .menu_wrapper .menu_wrapper_load_button {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1% 0 3%;
 }
-body main .menu_wrapper .menu_wrapper_load_buttons .menu_wrapper_load_buttons {
+body main .menu_wrapper .menu_wrapper_load_button .menu_wrapper_load_button {
+  outline: none;
   padding: 1% 5%;
   background-color: #fff;
   text-transform: uppercase;
@@ -862,7 +904,7 @@ body main .menu_wrapper .menu_wrapper_load_buttons .menu_wrapper_load_buttons {
   border: 2px solid #5D4037;
   cursor: pointer;
 }
-body main .menu_wrapper .menu_wrapper_load_buttons .menu_wrapper_load_buttons:hover {
+body main .menu_wrapper .menu_wrapper_load_button .menu_wrapper_load_button:hover {
   color: #FFA62A;
   border: 2px solid #FFA62A;
 }
@@ -1018,4 +1060,137 @@ body .counter .counter_wrapper p {
   font-size: 14px;
   font-weight: 700;
   text-align: center;
+}
+body .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .social h3 {
+  color: #FFA726;
+  text-transform: uppercase;
+  font-family: Passion One, cursive;
+  font-size: 46px;
+  font-weight: 700;
+  margin: 5% 0 2%;
+}
+body .social h3 span {
+  color: #5D4037;
+}
+body .social h6 {
+  color: #5D4037;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+body .social h6 span {
+  color: #FFA726;
+}
+body .social .social_wrapper {
+  width: 80%;
+  margin: 3% 10%;
+  display: flex;
+  background-color: #FFA62A;
+  flex-wrap: wrap;
+}
+body .social .social_wrapper .social_wrapper_instagram {
+  width: 25%;
+  position: relative;
+}
+body .social .social_wrapper .social_wrapper_instagram img {
+  width: 100%;
+  height: 100%;
+}
+body .social .social_wrapper .social_wrapper_instagram a {
+  text-decoration: none;
+  color: #fff;
+}
+body .social .social_wrapper .social_wrapper_instagram a .fa-instagram {
+  position: absolute;
+  left: 80%;
+  bottom: 87%;
+}
+body .social .social_wrapper .social_wrapper_twitter {
+  padding: 1.5%;
+  background-color: #5D4037;
+  width: 25%;
+  position: relative;
+}
+body .social .social_wrapper .social_wrapper_twitter a {
+  text-decoration: none;
+  color: #fff;
+}
+body .social .social_wrapper .social_wrapper_twitter a .fa-twitter {
+  position: absolute;
+  left: 80%;
+  bottom: 87%;
+}
+body .social .social_wrapper .social_wrapper_twitter .social_wrapper_twitter_info {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .social .social_wrapper .social_wrapper_twitter .social_wrapper_twitter_info h5 {
+  color: #FFA726;
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+body .social .social_wrapper .social_wrapper_twitter .social_wrapper_twitter_info h5 span {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 14px;
+}
+body .social .social_wrapper .social_wrapper_twitter .social_wrapper_twitter_info p {
+  color: #fff;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+}
+body .social .social_wrapper .social_wrapper_twitter .social_wrapper_twitter_likes {
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+body .social .social_wrapper .social_wrapper_twitter .social_wrapper_twitter_likes .fa-heart {
+  color: #fff;
+}
+body .social .social_wrapper .social_wrapper_twitter .social_wrapper_twitter_likes p {
+  padding-left: 10px;
+  color: #fff;
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+body .social .social_wrapper .social_wrapper_twitter:nth-child(2n) {
+  background-color: #FFA62A;
+}
+body .social .social_wrapper .social_wrapper_twitter:nth-child(2n) .social_wrapper_twitter_info h5 {
+  color: #fff;
+}
+body .social .social_wrapper .social_wrapper_twitter:nth-child(2n) .social_wrapper_twitter_info p {
+  color: #5D4037;
+}
+body .social .social_wrapper .social_wrapper_twitter:nth-child(2n) .social_wrapper_twitter_likes .fa-heart {
+  color: #5D4037;
+}
+body .social .social_wrapper .social_wrapper_twitter:nth-child(2n) .social_wrapper_twitter_likes p {
+  color: #5D4037;
+}
+body .social .social_load_more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+body .social .social_load_more input {
+  color: #fff;
+  background-color: #FFA726;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
 }

@@ -7,6 +7,44 @@ body {
 
   .standard;
 
+  /*burger made start*/
+  .button_made_burgers{
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    border: none;
+    outline: none;
+    background-color: @color-wine-menu;
+    position: fixed;
+    top: 80%;
+    z-index: 100;
+    cursor: pointer;
+    height: 60px;
+    border-radius: 30px;
+
+    span{
+      border-radius: 50%;
+      width: 60px;
+      height: 50px;
+      margin: 0 4%;
+      background-color: @color-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 70%;
+      }
+    }
+    p{
+      color: @color-content;
+      font-family: @font-PassionOne;
+      font-size: @font-size-content;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+  /*burger made end*/
+
   /*header start*/
   header {
     background-image: url("../img/bg.png");
@@ -25,7 +63,7 @@ body {
         display: flex;
         justify-content: flex-end;
         .header_top_nav {
-          width: 55%;
+          width: 65%;
           display: flex;
           justify-content: space-between;
           list-style-type: none;
@@ -128,7 +166,7 @@ body {
           left: 59%;
           list-style: none;
           text-align: center;
-          bottom: 28%;
+          bottom: 25%;
           z-index: 5;
           li {
             margin: 5px;
@@ -136,14 +174,16 @@ body {
               border-radius: 50%;
               width: 5px;
               height: 5px;
-              background-color: @color-wine;
+              background-color: @color-content;
+              opacity: 0.6;
               &::before {
                 content: '';
               }
             }
           }
           .slick-active button {
-            background-color: @color-wine-menu;
+            background-color: @color-content;
+            opacity: 1;
           }
         }
       }
@@ -329,6 +369,7 @@ body {
          align-items: center;
          padding: 1%  0;
          .menu_wrapper_buttons_button{
+           outline: none;
            padding: 1% 5%;
            background-color: @color-content;
            text-transform: uppercase;
@@ -855,12 +896,13 @@ body {
          display: flex;
        }
 
-       .menu_wrapper_load_buttons{
+       .menu_wrapper_load_button{
          display: flex;
          justify-content: center;
          align-items: center;
          padding: 1% 0 3%;
-         .menu_wrapper_load_buttons{
+         .menu_wrapper_load_button{
+           outline: none;
            padding: 1% 5%;
            background-color: @color-content;
            text-transform: uppercase;
@@ -875,6 +917,10 @@ body {
            }
          }
        }
+
+
+
+
      }
    }
   /*menu  end*/
@@ -1048,7 +1094,146 @@ body {
   }
   /*section counter   end*/
 
+  /*section social  start*/
+  .social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+      color: @color-yellow-title;
+      text-transform: uppercase;
+      font-family: @font-PassionOne;
+      font-size: @font-size-title;
+      font-weight: 700;
+      margin:  5% 0 2%;
+      span{
+        color: @color-wine;
+      }
+    }
+    h6{
+      color: @color-wine;
+      font-family: @font-OpenSans;
+      font-size: @font-size-content;
+      font-weight: 400;
+      span{
+        color: @color-yellow-title;
+      }
+    }
+    .social_wrapper{
+      width: 80%;
+      margin: 3% 10%;
+      display: flex;
+      background-color: @color-yellow-text;
+      flex-wrap: wrap;
+       .social_wrapper_instagram{
+           width: 25%;
+          position: relative;
+           img{
+             width: 100%;
+             height: 100%;
+           }
+          a{
+            text-decoration: none;
+            color: @color-content;
+            .fa-instagram{
+              position: absolute;
+              left: 80%;
+              bottom: 87%;
+            }
+          }
+        }
+       .social_wrapper_twitter{
+          padding: 1.5%;
+          background-color: @color-wine;
+          width: 25%;
+          position: relative;
+         a{
+           text-decoration: none;
+           color: @color-content;
+           .fa-twitter{
+             position: absolute;
+             left: 80%;
+             bottom: 87%;
+           }
+         }
+          .social_wrapper_twitter_info{
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h5{
+              color: @color-yellow-title;
+              font-family: @font-OpenSans;
+              font-size: @font-size-standard;
+              font-weight: 600;
+              span{
+                color: @color-content;
+                opacity: 0.6;
+                font-size: @font-size-menu-description;
+              }
+            }
+            p{
+              color: @color-content;;
+              font-family: @font-OpenSans;
+              font-size: @font-size-content;
+
+            }
+          }
+          .social_wrapper_twitter_likes{
+            height: 40%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            .fa-heart{
+              color: @color-content;
+            }
+            p{
+              padding-left: 10px;
+              color: @color-content;
+              font-family: @font-OpenSans;
+              font-size: @font-size-menu-description;
+              font-weight: 700;
+            }
+          }
+         &:nth-child(2n){
+           background-color: @color-yellow-text;
+           .social_wrapper_twitter_info{
+             h5{
+               color: @color-content;
+             }
+             p{
+               color: @color-wine;
+             }
+           }
+           .social_wrapper_twitter_likes{
+             .fa-heart{
+               color: @color-wine;
+             }
+             p{
+               color: @color-wine;
+             }
+           }
+         }
+       }
+    }
+    .social_load_more{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3%;
+      input{
+        color:@color-content;
+        background-color: @color-yellow-title;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+
+  }
+  /*section social    end*/
 
 }
-
-
