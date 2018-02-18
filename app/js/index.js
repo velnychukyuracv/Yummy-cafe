@@ -99,7 +99,7 @@ $(document).ready(function() {
 // Fixed top header navigation scroll events
     $(window).scroll(function(){
         if($(window).scrollTop() > 100) {
-            $('#header_top_navigation').css({ padding: '2% 5% 1%', background:'#ffa726', position:'fixed'});
+            $('#header_top_navigation').css({ padding: '2% 5% 1.74%',backgroundImage: 'url("../img/bg-header.png")',  position:'fixed'});
             $('.header_body_slider').css({ paddingTop: '6%'});
         } else{
             $('#header_top_navigation').css('background','transparent');
