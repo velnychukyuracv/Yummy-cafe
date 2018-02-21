@@ -1,57 +1,32 @@
 @import "constants";
 
+
 * {
   .standard_box;
 }
-body {
+#home {
 
   .standard;
 
-  /*burger made start*/
-  .button_made_burgers{
-    display: flex;
-    align-items: center;
-    margin: 1%;
-    border: none;
-    outline: none;
-    background-color: @color-wine-menu;
-    position: fixed;
-    top: 80%;
-    z-index: 100;
-    cursor: pointer;
-    height: 60px;
-    border-radius: 30px;
 
-    span{
-      border-radius: 50%;
-      width: 60px;
-      height: 50px;
-      margin: 0 4%;
-      background-color: @color-content;
+  .enter-popup{
+    width:30%;
+    .enter-popup-container{
+      margin: 2%;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      img{
-        width: 70%;
-      }
-    }
-    p{
-      color: @color-content;
-      font-family: @font-PassionOne;
-      font-size: @font-size-content;
-      font-weight: 500;
-      text-transform: uppercase;
+      flex-direction: column;
+      width: auto;
     }
   }
-  /*burger made end*/
+
 
   /*header start*/
-  header {
+    header {
     background-image: url("../img/bg.png");
     .header_top {
       display: flex;
       justify-content: space-between;
-      padding: 10% 5%;
+      padding: 2% 5%;
       z-index: 100;
       width: 100%;
       position: relative;
@@ -69,6 +44,7 @@ body {
           justify-content: space-between;
           list-style-type: none;
           li {
+            position: relative;
             cursor: pointer;
             a {
               font-family: @font-OpenSans;
@@ -83,9 +59,26 @@ body {
             }
           }
         }
+        .header_top_counter_buy{
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: @color-button-active;
+          position: absolute;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          font-family: @font-OpenSans;
+          font-size: 12px;
+          right:1%;
+          top: 1%;
+        }
       }
 
+
+
     }
+
     .header_body {
       .sl {
         .sl_slide {
@@ -196,6 +189,48 @@ body {
         z-index: 10;
       }
     }
+
+      /*burger made start*/
+      .button_made_burgers{
+        display: flex;
+        align-items: center;
+        margin: 1%;
+        border: none;
+        outline: none;
+        background-color: @color-wine-menu;
+        position: fixed;
+        top: 80%;
+        z-index: 100;
+        cursor: pointer;
+        height: 60px;
+        border-radius: 30px;
+        opacity: 0.95;
+        span{
+          border-radius: 50%;
+          width: 60px;
+          height: 50px;
+          margin: 0 4%;
+          background-color: @color-content;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img{
+            width: 70%;
+          }
+        }
+        h6{
+          color: @color-content;
+          font-family: @font-PassionOne;
+          font-size: @font-size-content;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+        &:hover{
+          background-color: @color-wine-menu;
+          opacity: 1;
+        }
+      }
+      /*burger made end*/
   }
   /*header end*/
 
@@ -405,10 +440,6 @@ body {
            outline: none;
            width: 20%;
 
-           transform: scale(1,1) ;
-           transition-timing-function: ease-out;
-           transition-duration: 550ms;
-
            .menu_wrapper_burgers_slider_slide_picture{
              display: flex;
              flex-direction: column;
@@ -555,7 +586,7 @@ body {
              transform: scale(1.2,1.2);
              transition-timing-function: ease-out;
              transition-duration: 550ms;
-             position: relative;
+
              .menu_wrapper_burgers_slider_slide_likes{
                display: flex;
              }
@@ -898,21 +929,25 @@ body {
          display: flex;
        }
 
-       .menu_wrapper_load_button{
+       .menu_wrapper_load{
          display: flex;
          justify-content: center;
          align-items: center;
          padding: 1% 0 3%;
-         .menu_wrapper_load_button{
+         a{
+           text-decoration: none;
            outline: none;
            padding: 1% 5%;
+           cursor: pointer;
+           border: 2px solid @color-wine;
+           display: flex;
+           justify-content: center;
+           align-items: center;
            background-color: @color-content;
            text-transform: uppercase;
            font-family: @font-PassionOne;
            font-size: @font-size-menu-name - 5px;
            color: @color-wine;
-           border: 2px solid @color-wine;
-           cursor: pointer;
            &:hover{
              color: @color-yellow-text;
              border: 2px solid @color-yellow-text;
@@ -1052,13 +1087,200 @@ body {
       font-family: @font-PassionOne;
       font-size: @font-size-title;
       font-weight: 700;
-      margin:  5% 0 3%;
+      margin-top: 5%;
       span{
         color: @color-wine;
       }
     }
     .perfection_wrapper{
       padding: 3%;
+      position: relative;
+
+
+      .perfection_wrapper_meat{
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+        right: 75%;
+        top: 52%;
+        width: 60%;
+        .perfection_wrapper_meat_button{
+          width: 30px;
+          height:30px;
+          border-radius: 50%;
+          background-color: @color-yellow-text;
+          border-color: @color-content;
+          outline: none;
+          color:@color-content;
+          font-size: @font-size-menu-name - 8px;
+          cursor: pointer;
+        }
+        .perfection_wrapper_meat_line{
+          margin-top: 10%;
+          display: none;
+          transform: rotate(180deg) scale(1, -1);
+           height: 80%;
+           width: 50%;
+        }
+        .perfection_wrapper_meat_description{
+          margin-top: 10%;
+          width: 30%;
+          display: none;
+          .perfection_wrapper_meat_description_meat{
+            width: 100%;
+          }
+          p{
+            color: @color-yellow-title;
+            font-family: @font-OpenSans;
+            font-size: @font-size-content + 3px;
+            font-weight: 600;
+            span{
+              color: @color-wine;
+            }
+          }
+        }
+      }
+
+      .perfection_wrapper_cheese{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        width: 60%;
+        position: absolute;
+        top: 20%;
+        right: 70%;
+        .perfection_wrapper_cheese_button{
+          margin-top: 20%;
+          width: 30px;
+          height:30px;
+          border-radius: 50%;
+          background-color: @color-yellow-text;
+          border-color: @color-content;
+          outline: none;
+          color:@color-content;
+          font-size: @font-size-menu-name - 8px;
+          cursor: pointer;
+        }
+        .perfection_wrapper_cheese_line{
+          margin-top: 15%;
+          transform: rotate(180deg);
+          height: 65%;
+          width: 35%;
+          display: none;
+        }
+        .perfection_wrapper_cheese_description{
+          width: 30%;
+          display: none;
+          .perfection_wrapper_cheese_description_cheese{
+            width: 100%;
+          }
+          p{
+            color: @color-yellow-title;
+            font-family: @font-OpenSans;
+            font-size: @font-size-content + 3px;
+            font-weight: 600;
+            span{
+              color: @color-wine;
+            }
+          }
+        }
+      }
+
+      .perfection_wrapper_salad{
+        left:70%;
+        top: 65%;
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        position: absolute;
+        .perfection_wrapper_salad_button{
+          width: 30px;
+          height:30px;
+          border-radius: 50%;
+          background-color: @color-yellow-text;
+          border-color: @color-content;
+          outline: none;
+          color:@color-content;
+          font-size: @font-size-menu-name - 8px;
+          cursor: pointer;
+        }
+        .perfection_wrapper_salad_line{
+          height: 80%;
+          width: 50%;
+          display: none;
+        }
+        .perfection_wrapper_salad_description{
+          width: 30%;
+          display: none;
+          .perfection_wrapper_salad_description_salad{
+            width: 80%;
+          }
+          p{
+            color: @color-yellow-title;
+            font-family: @font-OpenSans;
+            font-size: @font-size-content + 3px;
+            font-weight: 600;
+            span{
+              color: @color-wine;
+            }
+          }
+        }
+      }
+
+      .perfection_wrapper_tomato{
+        align-items: flex-end;
+        display: flex;
+        width: 60%;
+        position: absolute;
+        left: 60%;
+        top: 22%;
+        .perfection_wrapper_tomato_button{
+          margin-top: 18%;
+          width: 30px;
+          height:30px;
+          border-radius: 50%;
+          background-color: @color-yellow-text;
+          border-color: @color-content;
+          outline: none;
+          color:@color-content;
+          font-size: @font-size-menu-name - 8px;
+          cursor: pointer;
+        }
+        .perfection_wrapper_tomato_line{
+          display: none;
+          transform:  scale(1, -1);
+          height: 80%;
+          width: 40%;
+        }
+        .perfection_wrapper_tomato_description{
+          display: none;
+          width: 35%;
+          .perfection_wrapper_tomato_description_tomato{
+            width: 100%;
+          }
+          p{
+            color: @color-yellow-title;
+            font-family: @font-OpenSans;
+            font-size: @font-size-content + 1px;
+            font-weight: 600;
+            span{
+              color: @color-wine;
+            }
+          }
+        }
+      }
+
+      .perfection_wrapper_button_active{
+        width: 30px;
+        height:30px;
+        border-radius: 50%;
+        border-color: @color-content;
+        outline: none;
+        color:@color-content;
+        background-color: @color-button-active;
+        font-size: @font-size-menu-name - 10px;
+        transform: rotate(45deg) scale(1.2,1.2);
+      }
     }
   }
   /*section perfection ingredients  end*/
@@ -1377,3 +1599,4 @@ body {
   /*footer  end*/
 
 }
+

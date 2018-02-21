@@ -1,0 +1,935 @@
+@import "constants";
+
+
+* {
+  .standard_box;
+}
+#menu {
+
+  .standard;
+
+  /*header start*/
+  header {
+    background-image: url("../img/bg.png");
+    .header_top {
+      display: flex;
+      justify-content: space-between;
+      padding: 2% 5%;
+      z-index: 100;
+      width: 100%;
+      position: relative;
+      .header_top_logo{
+        width: 30%;
+      }
+
+      nav {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        .header_top_nav {
+          width: 40%;
+          display: flex;
+          justify-content: space-between;
+          list-style-type: none;
+          li {
+            position: relative;
+            cursor: pointer;
+            a {
+              font-family: @font-OpenSans;
+              font-size: @font-size-content;
+              font-weight: 700;
+              text-decoration: none;
+              color: @color-nav;
+              padding: 5px;
+              &:hover {
+                color: @color-content;
+              }
+            }
+          }
+        }
+        .header_top_counter_buy{
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: @color-button-active;
+          position: absolute;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          font-family: @font-OpenSans;
+          font-size: 12px;
+          right:1%;
+          top: 1%;
+        }
+      }
+
+
+
+    }
+
+    .header_body {
+      .sl {
+        .sl_slide {
+          display: flex;
+          border: none;
+          outline: none;
+          .header_body_left {
+            width: 50%;
+            img {
+              margin-right: 2%;
+            }
+          }
+          .header_body_right {
+            width: 50%;
+            margin: 15% 0 8% 8%;
+            padding: 2%;
+            .header_body_right_name {
+              line-height: 0.8;
+              h5 {
+                color: @color-wine;
+                text-transform: uppercase;
+                font-size: @font-size-content;
+                font-weight: 700;
+                padding-left: 1%;
+              }
+              h4 {
+                color: @color-content;
+                text-transform: uppercase;
+                font-size: @font-size-post;
+                font-family: @font-PassionOne;
+                font-weight: 700;
+                span {
+                  color: @color-wine;
+                }
+              }
+            }
+            .header_body_right_prise {
+              display: flex;
+              padding-left: 1%;
+              margin: 3% 0;
+              .header_body_right_prise_sale {
+                font-size: @font-size-banner;
+                font-family: @font-OpenSans;
+                font-weight: 800;
+              }
+              .header_body_right_prise_regular {
+                font-size: @font-size-menu-name;
+                font-family: @font-OpenSans;
+                font-weight: 400;
+                padding: 2% 0 0 3%;
+                color: @color-nav;
+                text-decoration: line-through;
+
+              }
+            }
+            .header_body_right_order {
+              padding-left: 1%;
+              .header_body_right_order_button{
+                cursor: pointer;
+                border: 2px solid @color-nav;
+                background-color: @color-yellow-text;
+                color: @color-nav;
+                text-transform: uppercase;
+                font-family: @font-PassionOne;
+                font-size: @font-size-banner;
+                padding: 1% 4%;
+                outline: none;
+                &:hover{
+                  color: @color-content;
+                  border: 2px solid @color-content;
+                }
+              }
+            }
+          }
+        }
+        .slick-dots {
+          position: absolute;
+          display: block;
+          width: 10%;
+          left: 59%;
+          list-style: none;
+          text-align: center;
+          bottom: 25%;
+          z-index: 5;
+          li {
+            margin: 5px;
+            button {
+              border-radius: 50%;
+              width: 5px;
+              height: 5px;
+              background-color: @color-content;
+              opacity: 0.6;
+              &::before {
+                content: '';
+              }
+            }
+          }
+          .slick-active button {
+            background-color: @color-content;
+            opacity: 1;
+          }
+        }
+      }
+      .slick-dotted.slick-slider {
+        margin-bottom: 0;
+      }
+      .slick-list{
+        z-index: 10;
+      }
+    }
+
+    /*burger made start*/
+    .button_made_burgers{
+      display: flex;
+      align-items: center;
+      margin: 1%;
+      border: none;
+      outline: none;
+      background-color: @color-wine-menu;
+      position: fixed;
+      top: 80%;
+      z-index: 100;
+      cursor: pointer;
+      height: 60px;
+      border-radius: 30px;
+      opacity: 0.95;
+      span{
+        border-radius: 50%;
+        width: 60px;
+        height: 50px;
+        margin: 0 4%;
+        background-color: @color-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 70%;
+        }
+      }
+      p{
+        color: @color-content;
+        font-family: @font-PassionOne;
+        font-size: @font-size-content;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      &:hover{
+        background-color: @color-wine-menu;
+        opacity: 1;
+      }
+    }
+    /*burger made end*/
+  }
+  /*header end*/
+
+
+  /*menu start*/
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+      color: @color-yellow-title;
+      text-transform: uppercase;
+      font-family: @font-PassionOne;
+      font-size: @font-size-banner + @font-size-menu-name;
+      font-weight: 700;
+      margin:  2% 0;
+      span{
+        color: @color-wine;
+      }
+    }
+    hr{
+      width: 10%;
+      height:5px;
+      background-color: @color-yellow-text;
+      border: none;
+    }
+
+    .menu_wrapper{
+      width: 100%;
+      display: flex;
+
+      .menu_wrapper_block{
+        width: 75%;
+
+        .menu_wrapper_burgers_slider{
+          display: none;
+          width: 100%;
+          padding: 0 3% ;
+          justify-content: space-around;
+          flex-wrap: wrap;
+
+          .menu_wrapper_burgers_slider_slide{
+            display: flex;
+            flex-direction: column;
+            margin: 4% 2%;
+            padding-top: 15%;
+            outline: none;
+            width: 20%;
+
+            transform: scale(1,1) ;
+            transition-timing-function: ease-out;
+            transition-duration: 550ms;
+
+            .menu_wrapper_burgers_slider_slide_picture{
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              img{
+                width: 100%;
+                position: absolute;
+                bottom: 15%;
+              }
+              .menu_wrapper_burgers_slider_slide_picture_square{
+                height: 50px;
+                background-color: @color-yellow-title;
+              }
+            }
+            .menu_wrapper_burgers_slider_slide_title{
+              display: flex;
+              .menu_wrapper_burgers_slider_slide_title_name{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                border-top: 3px solid @color-wine;
+                border-bottom: 3px solid @color-wine;
+                padding: 5% 0 5% 3%;
+                h6{
+                  color: @color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 600;
+                  font-size: @font-size-menu-description;
+                }
+                h5{
+                  color: @color-wine;
+                  font-family: @font-PassionOne;
+                  font-weight: 700;
+                  font-size: @font-size-menu-name;
+                  text-transform: uppercase;
+                }
+              }
+              .menu_wrapper_burgers_slider_slide_title_price{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                border-top: 3px solid @color-yellow-title;
+                border-bottom: 3px solid @color-yellow-title;
+                padding-top: 5%;
+                h5{
+                  color: @color-yellow-text;
+                  font-family: @font-PassionOne;
+                  font-weight: 700;
+                  font-size: @font-size-menu-name - 5px;
+                }
+              }
+            }
+            .menu_wrapper_burgers_slider_slide_description{
+              display: flex;
+              background-color: @color-bg-menu;
+              .menu_wrapper_burgers_slider_slide_description_ingredients{
+                display: flex;
+                flex-wrap: wrap;
+                width: 70%;
+                padding: 3% 0 3% 3%;
+                p{
+                  color:@color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 600;
+                  font-size: @font-size-menu-description;
+                }
+              }
+              .menu_wrapper_burgers_slider_slide_description_gram{
+                display: flex;
+                justify-content: flex-end;
+                width: 30%;
+                padding: 5% 3% 3% 0;
+                h6{
+                  color:@color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 700;
+                  font-size: @font-size-content;
+                  opacity: 0.7;
+                }
+              }
+            }
+            .menu_wrapper_burgers_slider_slide_likes{
+              display: none;
+              background-color: @color-bg-menu;
+              .menu_wrapper_burgers_slider_slide_likes_like{
+                display: flex;
+                width: 70%;
+                padding: 2% 0 2% 3%;
+                .fa-heart{
+                  color: @color-wine-menu ;
+                }
+                p{
+                  color:@color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 400;
+                  font-size: @font-size-menu-description;
+                  padding-left: 3%;
+                  display: flex;
+                  span{
+                    color:@color-wine-menu;
+                    opacity: 0.8;
+                    padding-left: 3%;
+                  }
+                }
+              }
+              .menu_wrapper_burgers_slider_slide_likes_kcal{
+                display: flex;
+                justify-content: flex-end;
+                width: 30%;
+                padding: 2% 0 ;
+                p{
+                  color:@color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 700;
+                  font-size: @font-size-menu-description;
+                  opacity: 0.7;
+                }
+              }
+            }
+            .menu_wrapper_burgers_slider_slide_order{
+              display: none;
+              justify-content: center;
+              background-color: @color-bg-menu;
+              padding: 2% 0 ;
+              .menu_wrapper_burgers_slider_slide_order_button{
+                border:2px solid @color-wine;
+                color: @color-wine;
+                width: 90%;
+                padding: 2% 0;
+                background-color: @color-bg-menu;
+                text-transform: uppercase;
+                font-family: @font-PassionOne;
+                font-weight: 700;
+                font-size: @font-size-content;
+                opacity: 0.8;
+                cursor: pointer;
+                &:hover{
+                  opacity: 1;
+                }
+              }
+            }
+            &:hover{
+              transform: scale(1.2,1.2);
+              transition-timing-function: ease-out;
+              transition-duration: 550ms;
+              position: relative;
+              .menu_wrapper_burgers_slider_slide_likes{
+                display: flex;
+              }
+              .menu_wrapper_burgers_slider_slide_order{
+                display: flex;
+              }
+            }
+          }
+        }
+        .menu_wrapper_burgers_slider.active {
+          display: flex;
+        }
+
+        .menu_wrapper_potato_slider{
+          display: none;
+          width: 100%;
+          padding: 0 3%;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          .menu_wrapper_potato_slider_slide{
+            display: flex;
+            flex-direction: column;
+            margin: 4% 2%;
+            padding-top: 15%;
+            outline: none;
+            width: 20%;
+
+            transform: scale(1,1) ;
+            transition-timing-function: ease-out;
+            transition-duration: 550ms;
+
+            .menu_wrapper_potato_slider_slide_picture{
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              img{
+                width: 100%;
+                position: absolute;
+                bottom: 15%;
+              }
+              .menu_wrapper_potato_slider_slide_picture_square{
+                height: 50px;
+                background-color: @color-yellow-title;
+              }
+            }
+            .menu_wrapper_potato_slider_slide_title{
+              display: flex;
+              .menu_wrapper_potato_slider_slide_title_name{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                border-top: 3px solid @color-wine;
+                border-bottom: 3px solid @color-wine;
+                padding: 5% 0 5% 3%;
+                h6{
+                  color: @color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 600;
+                  font-size: @font-size-menu-description;
+                }
+                h5{
+                  color: @color-wine;
+                  font-family: @font-PassionOne;
+                  font-weight: 700;
+                  font-size: @font-size-menu-name;
+                  text-transform: uppercase;
+                }
+              }
+              .menu_wrapper_potato_slider_slide_title_price{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                border-top: 3px solid @color-yellow-title;
+                border-bottom: 3px solid @color-yellow-title;
+                padding-top: 5%;
+                h5{
+                  color: @color-yellow-text;
+                  font-family: @font-PassionOne;
+                  font-weight: 700;
+                  font-size: @font-size-menu-name - 5px;
+                }
+              }
+            }
+            .menu_wrapper_potato_slider_slide_description{
+              display: flex;
+              background-color: @color-bg-menu;
+              .menu_wrapper_potato_slider_slide_description_ingredients{
+                display: flex;
+                flex-wrap: wrap;
+                width: 70%;
+                padding: 5% 0 6% 3%;
+                p{
+                  color:@color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 700;
+                  font-size: @font-size-content;
+                }
+              }
+              .menu_wrapper_potato_slider_slide_description_gram{
+                display: flex;
+                justify-content: flex-end;
+                width: 30%;
+                padding: 5% 3% 6% 0;
+                h6{
+                  color:@color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 700;
+                  font-size: @font-size-content;
+                  opacity: 0.7;
+                }
+              }
+            }
+            .menu_wrapper_potato_slider_slide_likes{
+              display: none;
+              background-color: @color-bg-menu;
+              .menu_wrapper_potato_slider_slide_likes_like{
+                display: flex;
+                width: 70%;
+                padding: 2% 0 2% 3%;
+                .fa-heart{
+                  color: @color-wine-menu ;
+                }
+                p{
+                  color:@color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 400;
+                  font-size: @font-size-menu-description;
+                  padding-left: 3%;
+                  display: flex;
+                  span{
+                    color:@color-wine-menu;
+                    opacity: 0.8;
+                    padding-left: 3%;
+                  }
+                }
+              }
+              .menu_wrapper_potato_slider_slide_likes_kcal{
+                display: flex;
+                justify-content: flex-end;
+                width: 30%;
+                padding: 2% 0 ;
+                p{
+                  color:@color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 700;
+                  font-size: @font-size-menu-description;
+                  opacity: 0.7;
+                }
+              }
+            }
+            .menu_wrapper_potato_slider_slide_order{
+              display: none;
+              justify-content: center;
+              background-color: @color-bg-menu;
+              padding: 2% 0 ;
+              .menu_wrapper_potato_slider_slide_order_button{
+                border:2px solid @color-wine;
+                color: @color-wine;
+                width: 90%;
+                padding: 2% 0;
+                background-color: @color-bg-menu;
+                text-transform: uppercase;
+                font-family: @font-PassionOne;
+                font-weight: 700;
+                font-size: @font-size-content;
+                opacity: 0.8;
+                cursor: pointer;
+                &:hover{
+                  opacity: 1;
+                }
+              }
+            }
+            &:hover{
+              transform: scale(1.2,1.2);
+              transition-timing-function: ease-out;
+              transition-duration: 550ms;
+              position: relative;
+
+              .menu_wrapper_potato_slider_slide_likes{
+                display: flex;
+              }
+              .menu_wrapper_potato_slider_slide_order{
+                display: flex;
+              }
+            }
+          }
+        }
+        .menu_wrapper_potato_slider.active {
+          display: flex;
+        }
+
+        .menu_wrapper_drinks_slider{
+          display: none;
+          width: 100%;
+          padding: 0 3%;
+          justify-content: space-around;
+          flex-wrap: wrap;
+
+          .menu_wrapper_drinks_slider_slide{
+            display: flex;
+            flex-direction: column;
+            margin: 4% 2%;
+            padding-top: 15%;
+            outline: none;
+            width: 20%;
+
+            transform: scale(1,1) ;
+            transition-timing-function: ease-out;
+            transition-duration: 550ms;
+
+            .menu_wrapper_drinks_slider_slide_picture{
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              width: 100%;
+              img{
+                width: 100%;
+                position: absolute;
+                bottom: 15%;
+              }
+              .menu_wrapper_drinks_slider_slide_picture_square{
+                height: 50px;
+                background-color: @color-yellow-title;
+              }
+            }
+            .menu_wrapper_drinks_slider_slide_title{
+              display: flex;
+              .menu_wrapper_drinks_slider_slide_title_name{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                border-top: 3px solid @color-wine;
+                border-bottom: 3px solid @color-wine;
+                padding: 5% 0 5% 3%;
+                h6{
+                  color: @color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 600;
+                  font-size: @font-size-menu-description;
+                }
+                h5{
+                  color: @color-wine;
+                  font-family: @font-PassionOne;
+                  font-weight: 700;
+                  font-size: @font-size-menu-description;
+                  text-transform: uppercase;
+                }
+              }
+              .menu_wrapper_drinks_slider_slide_title_price{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                border-top: 3px solid @color-yellow-title;
+                border-bottom: 3px solid @color-yellow-title;
+                padding-top: 5%;
+                h5{
+                  color: @color-yellow-text;
+                  font-family: @font-PassionOne;
+                  font-weight: 700;
+                  font-size: @font-size-menu-description;
+                }
+              }
+            }
+            .menu_wrapper_drinks_slider_slide_likes{
+              display: flex;
+              background-color: @color-bg-menu;
+              padding: 2% 0 1%;
+              .menu_wrapper_drinks_slider_slide_likes_like{
+                display: flex;
+                width: 70%;
+                padding: 4% 0 3% 3%;
+                .fa-heart{
+                  color: @color-wine-menu ;
+                }
+                p{
+                  color:@color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 400;
+                  font-size: @font-size-menu-description;
+                  padding-left: 3%;
+                  display: flex;
+                  span{
+                    color:@color-wine-menu;
+                    opacity: 0.8;
+                    padding-left: 3%;
+                  }
+                }
+              }
+              .menu_wrapper_drinks_slider_slide_description_ml{
+                display: flex;
+                justify-content: flex-end;
+                width: 30%;
+                padding: 4% 3%;
+                h6{
+                  color:@color-wine-menu;
+                  font-family: @font-OpenSans;
+                  font-weight: 700;
+                  font-size: @font-size-content;
+                  opacity: 0.7;
+                }
+              }
+            }
+            .menu_wrapper_drinks_slider_slide_order{
+              display: none;
+              justify-content: center;
+              background-color: @color-bg-menu;
+              padding: 1% 0 5%;
+              .menu_wrapper_drinks_slider_slide_order_button{
+                border:2px solid @color-wine;
+                color: @color-wine;
+                width: 90%;
+                padding: 2% 0;
+                background-color: @color-bg-menu;
+                text-transform: uppercase;
+                font-family: @font-PassionOne;
+                font-weight: 700;
+                font-size: @font-size-content;
+                opacity: 0.8;
+                cursor: pointer;
+                &:hover{
+                  opacity: 1;
+                }
+              }
+            }
+            &:hover{
+              transform: scale(1.2,1.2);
+              transition-timing-function: ease-out;
+              transition-duration: 550ms;
+              position: relative;
+              .menu_wrapper_drinks_slider_slide_order{
+                display: flex;
+              }
+            }
+          }
+        }
+        .menu_wrapper_drinks_slider.active {
+          display: flex;
+        }
+
+      }
+
+      .menu_wrapper_buttons{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        padding-top: 7%;
+        padding-bottom: 2%;
+        margin-left: 5%;
+        .menu_wrapper_buttons_button{
+          outline: none;
+          width: 100%;
+          padding: 8% 0;
+          background-color: @color-content;
+          text-transform: uppercase;
+          font-family: @font-PassionOne;
+          font-size: @font-size-menu-name - 5px;
+          color: @color-wine;
+          border: 2px solid @color-wine;
+          cursor: pointer;
+          margin: 10% 0;
+        }
+        .menu_wrapper_buttons_button.active {
+          color: @color-yellow-text;
+          border: 2px solid @color-yellow-text;
+        }
+      }
+    }
+  }
+  /*menu  end*/
+
+
+  /*footer  start*/
+  footer{
+    .footer_top_map{
+      width: 100%;
+    }
+    .footer_top{
+      background-image: url("../img/map.png");
+      padding-bottom: 10%;
+
+      .footer_top_contact{
+        margin: 5% 0 0 8%;
+        width: 18%;
+        display: flex;
+        flex-direction: column;
+        h4{
+          color: @color-yellow-title;
+          text-transform: uppercase;
+          font-family: @font-PassionOne;
+          font-size: @font-size-menu-name;
+          font-weight: 700;
+          margin-bottom: 5%;
+          span{
+            color: @color-wine;
+          }
+        }
+        .footer_top_contact_form{
+          .footer_top_contact_form_address{
+            width: 100%;
+            background-color: @color-yellow-text;
+            select{
+              background-color: @color-yellow-text;
+              padding: 3% 0;
+              outline: none;
+              border: none;
+              color: @color-content;
+              font-family: @font-OpenSans;
+              font-weight: 600;
+              font-size: @font-size-standard;
+              option{
+                width: 100%;
+                outline: none;
+                border: none;
+                color: @color-content;
+                font-family: @font-OpenSans;
+                font-weight: 600;
+                font-size: @font-size-content;
+              }
+            }
+          }
+          .footer_top_contact_form_phone{
+            width: 100%;
+            background-color: @color-wine;
+            padding: 5%;
+            h6{
+              color: @color-content;
+              font-family: @font-PassionOne;
+              font-weight: 600;
+              font-size: @font-size-menu-name - 5px;
+              border-bottom: 1px solid @color-yellow-text;
+              padding-bottom: 8%;
+              span{
+                color: @color-yellow-text;
+              }
+            }
+            .footer_top_contact_form_phone_description{
+              display: flex;
+              margin: 8% 0;
+              .footer_top_contact_form_phone_left{
+                .fa-phone-volume{
+                  color: @color-yellow-text;
+                }
+              }
+
+              .footer_top_contact_form_phone_right{
+                width: 100%;
+                margin-left: 5%;
+                p{
+                  font-family: @font-OpenSans;
+                  font-weight: 600;
+                  font-size: @font-size-content + 2px;
+                  &:nth-child(2){
+                    margin: 3% 0 5%;
+                  }
+                }
+                .footer_top_contact_form_phone_right_social{
+                  width: 70%;
+                  display: flex;
+                  a{
+                    width: 32%;
+                    img{
+                      width: 100%;
+                    }
+                    &:nth-child(2){
+                      margin: 0 5%;
+                    }
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+    .footer_down{
+      display: flex;
+      justify-content: space-between;
+      background-color: @color-wine;
+      padding: 1% 8%;
+      .footer_down_left{
+        width: 40%;
+        display: flex;
+        justify-content: flex-start;
+        h5{
+          margin-left: 3%;
+          text-transform: uppercase;
+          font-family: @font-OpenSans;
+          font-weight: 700;
+          font-size: @font-size-content;
+          opacity: 0.7;
+        }
+      }
+      .footer_down_right{
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        h5{
+          text-transform: uppercase;
+          font-family: @font-OpenSans;
+          font-weight: 700;
+          font-size: @font-size-content;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  /*footer  end*/
+
+}
+

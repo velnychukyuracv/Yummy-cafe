@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
-    //Video popup
+
+//Video popup
     $('.popup').magnificPopup({
         type: 'iframe',
         mainClass: 'mfp-fade',
@@ -8,4 +9,5 @@ $(document).ready(function() {
         preloader: false,
         fixedContentPos: false,
     })
+
 });
