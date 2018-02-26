@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+//video popup at index.html(home page)
+    $('.popup').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false,
+    })
+
+
 //popup enter user
 
     //open popup enter user
@@ -22,6 +32,10 @@ $(document).ready(function(){
             $('.popup_enter').removeClass('is-visible');
         }
     });
+
+
+//validation form enter user
+
 
 
 //popup registration new user
@@ -83,7 +97,5 @@ $(document).ready(function(){
         }
 
     });
-
-
 
 });
