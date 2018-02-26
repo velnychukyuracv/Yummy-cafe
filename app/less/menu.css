@@ -1,3 +1,7 @@
+/*font family type constants*/
+/*font size constants*/
+/*colors constants*/
+/*mixin constants*/
 .standard {
   min-width: 320px;
   margin: 0 auto;
@@ -24,35 +28,49 @@
   font-weight: 400;
   color: #fff;
   /*header start*/
+  /*header start*/
+  /*header end*/
+  /*popup*/
+  /*popup enter user start*/
+  /*popup enter user end*/
+  /*popup registration new user start*/
+  /**popup registration new user  end*/
   /*header end*/
   /*menu start*/
-  /*menu  end*/
+  /*menu  end
+
+  /*footer start*/
   /*footer  start*/
   /*footer  end*/
+  /*footer end*/
 }
 #menu header {
   background-image: url("../img/bg.png");
-  /*burger made start*/
-  /*burger made end*/
+  /*header top information*/
+  /*header main information*/
+  /*burger made button*/
 }
 #menu header .header_top {
+  background-image: url("../img/bg-header.png");
+  background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
   padding: 2% 5%;
   z-index: 100;
   width: 100%;
-  position: relative;
+  position: fixed;
+  /*logo section*/
+  /*navigation section*/
 }
 #menu header .header_top .header_top_logo {
   width: 30%;
 }
 #menu header .header_top nav {
-  width: 70%;
+  width: 30%;
   display: flex;
-  justify-content: flex-end;
 }
 #menu header .header_top nav .header_top_nav {
-  width: 40%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -72,6 +90,12 @@
 #menu header .header_top nav .header_top_nav li a:hover {
   color: #fff;
 }
+#menu header .header_top nav .header_top_nav li:nth-child(4) {
+  width: 10%;
+}
+#menu header .header_top nav .header_top_nav li:nth-child(4) a {
+  width: 100%;
+}
 #menu header .header_top nav .header_top_counter_buy {
   width: 15px;
   height: 15px;
@@ -85,6 +109,13 @@
   font-size: 12px;
   right: 1%;
   top: 1%;
+}
+#menu header .header_body {
+  padding-top: 6%;
+  /*slider wrapper*/
+}
+#menu header .header_body .sl {
+  /*slide*/
 }
 #menu header .header_body .sl .sl_slide {
   display: flex;
@@ -219,7 +250,7 @@
 #menu header .button_made_burgers span img {
   width: 70%;
 }
-#menu header .button_made_burgers p {
+#menu header .button_made_burgers h6 {
   color: #fff;
   font-family: Passion One, cursive;
   font-size: 18px;
@@ -230,10 +261,269 @@
   background-color: #6D4C41;
   opacity: 1;
 }
+#menu .popup_enter {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  z-index: 500;
+}
+#menu .popup_enter .popup_enter_container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 2px;
+  transform: translateY(-40px);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  padding: 10px ;
+  left: 65%;
+  top: 10%;
+}
+#menu .popup_enter .popup_enter_container input {
+  margin: 5px 0;
+  padding: 10px;
+  color: #5D4037;
+  border: 2px solid #5D4037;
+}
+#menu .popup_enter .popup_enter_container .popup_enter_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+#menu .popup_enter .popup_enter_container .popup_enter_buttons li {
+  width: 46%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu .popup_enter .popup_enter_container .popup_enter_buttons li a {
+  width: 100%;
+  text-decoration: none;
+  outline: none;
+  padding: 2%;
+  cursor: pointer;
+  border: 2px solid #5D4037;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-family: Passion One, cursive;
+  font-size: 25px;
+  color: #5D4037;
+}
+#menu .popup_enter .popup_enter_container .popup_enter_buttons li a:hover {
+  color: #FFA62A;
+  border: 2px solid #FFA62A;
+}
+#menu .popup_enter .popup_enter_container .popup_enter_forgot {
+  text-decoration: none;
+  color: #757575;
+  font-size: 14px;
+  padding-left: 2%;
+}
+#menu .popup_enter .popup_enter_container .popup_enter_forgot:hover {
+  color: #FFA62A;
+}
+#menu .popup_enter .popup_enter_container .popup_enter_close {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  overflow: visible;
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#menu .popup_enter .popup_enter_container .popup_enter_close::after,
+#menu .popup_enter .popup_enter_container .popup_enter_close::before {
+  content: '-';
+  position: absolute;
+  top: 12px;
+  width: 14px;
+  height: 3px;
+  background-color: #FFA62A;
+}
+#menu .popup_enter .popup_enter_container .popup_enter_close::before {
+  transform: rotate(45deg);
+  left: 8px;
+}
+#menu .popup_enter .popup_enter_container .popup_enter_close::after {
+  transform: rotate(-45deg);
+  right: 8px;
+}
+#menu .popup_enter.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+#menu .is-visible .popup_enter_container {
+  transform: translateY(0);
+}
+#menu .popup-registration {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  transition: opacity 0.3s 0s, visibility 0s 0.5s;
+  z-index: 500;
+}
+#menu .popup-registration .popup-registration-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 35%;
+  height: 90%;
+  background: #fff;
+  border-radius: 2px;
+  transform: translateY(-40px);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  padding: 10px ;
+  margin: 1% auto;
+  top: 10%;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container {
+  display: flex;
+  margin: 2% 1% 1%;
+  width: 95%;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container label {
+  width: 25%;
+  color: #5D4037;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container input {
+  width: 65%;
+  padding: 10px;
+  color: #5D4037;
+  border: 2px solid #5D4037;
+  margin: 0 2%;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container p {
+  width: 5%;
+  color: red;
+  font-size: 18px;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container-gender {
+  display: flex;
+  margin: 2% 1% 1%;
+  width: 95%;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container-gender p {
+  width: 25%;
+  color: #5D4037;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container-gender input[name=gender] {
+  outline: none;
+  margin: 0 2%;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container-confirm {
+  display: flex;
+  align-items: center;
+  margin: 4%;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container-confirm input[name=confrm] {
+  width: 5%;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container-confirm label {
+  color: #5D4037;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 2%;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container-confirm p {
+  color: red;
+  font-size: 18px;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container-enter {
+  display: flex;
+  justify-content: flex-end;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container-enter .popup-registration-button {
+  width: 35%;
+  text-decoration: none;
+  outline: none;
+  padding: 1%;
+  cursor: pointer;
+  border: 2px solid #5D4037;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-family: Passion One, cursive;
+  font-size: 25px;
+  color: #5D4037;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-container-enter .popup-registration-button:hover {
+  color: #FFA62A;
+  border: 2px solid #FFA62A;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-close {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  overflow: visible;
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-close::after,
+#menu .popup-registration .popup-registration-form .popup-registration-close::before {
+  content: '-';
+  position: absolute;
+  top: 12px;
+  width: 14px;
+  height: 3px;
+  background-color: #FFA62A;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-close::before {
+  transform: rotate(45deg);
+  left: 8px;
+}
+#menu .popup-registration .popup-registration-form .popup-registration-close::after {
+  transform: rotate(-45deg);
+  right: 8px;
+}
+#menu .popup-registration.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+#menu .is-visible .popup-registration-container {
+  transform: translateY(0);
+}
 #menu main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /*menu wrapper*/
 }
 #menu main h3 {
   color: #FFA726;
@@ -255,9 +545,14 @@
 #menu main .menu_wrapper {
   width: 100%;
   display: flex;
+  /*menu*/
+  /*buttons part*/
 }
 #menu main .menu_wrapper .menu_wrapper_block {
   width: 75%;
+  /*burgers parts*/
+  /*potato parts*/
+  /*drinks parts*/
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_burgers_slider {
   display: none;
@@ -273,6 +568,7 @@
   padding-top: 15%;
   outline: none;
   width: 20%;
+  height: 60%;
   transform: scale(1, 1);
   transition-timing-function: ease-out;
   transition-duration: 550ms;
@@ -779,18 +1075,25 @@
   color: #FFA62A;
   border: 2px solid #FFA62A;
 }
-#menu footer .footer_top_map {
-  width: 100%;
+#menu footer {
+  /*footer top information*/
+  /*footer down copyright information*/
 }
 #menu footer .footer_top {
   background-image: url("../img/map.png");
   padding-bottom: 10%;
+  /*footer top map*/
+  /*footer top contact information*/
+}
+#menu footer .footer_top .footer_top_map {
+  width: 100%;
 }
 #menu footer .footer_top .footer_top_contact {
   margin: 5% 0 0 8%;
   width: 18%;
   display: flex;
   flex-direction: column;
+  /*contact*/
 }
 #menu footer .footer_top .footer_top_contact h4 {
   color: #FFA726;
@@ -802,6 +1105,10 @@
 }
 #menu footer .footer_top .footer_top_contact h4 span {
   color: #5D4037;
+}
+#menu footer .footer_top .footer_top_contact .footer_top_contact_form {
+  /*address information*/
+  /*phone information*/
 }
 #menu footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_address {
   width: 100%;
@@ -879,6 +1186,8 @@
   justify-content: space-between;
   background-color: #5D4037;
   padding: 1% 8%;
+  /*copyright developer*/
+  /*copyright cafe*/
 }
 #menu footer .footer_down .footer_down_left {
   width: 40%;

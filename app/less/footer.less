@@ -1,0 +1,156 @@
+@import "constants";
+
+
+/*footer  start*/
+footer{
+
+  /*footer top information*/
+  .footer_top{
+    background-image: url("../img/map.png");
+    padding-bottom: 10%;
+
+    /*footer top map*/
+    .footer_top_map{
+      width: 100%;
+    }
+
+    /*footer top contact information*/
+    .footer_top_contact{
+      margin: 5% 0 0 8%;
+      width: 18%;
+      display: flex;
+      flex-direction: column;
+      h4{
+        color: @color-yellow-title;
+        text-transform: uppercase;
+        font-family: @font-PassionOne;
+        font-size: @font-size-menu-name;
+        font-weight: 700;
+        margin-bottom: 5%;
+        span{
+          color: @color-wine;
+        }
+      }
+
+      /*contact*/
+      .footer_top_contact_form{
+
+        /*address information*/
+        .footer_top_contact_form_address{
+          width: 100%;
+          background-color: @color-yellow-text;
+          select{
+            background-color: @color-yellow-text;
+            padding: 3% 0;
+            outline: none;
+            border: none;
+            color: @color-content;
+            font-family: @font-OpenSans;
+            font-weight: 600;
+            font-size: @font-size-standard;
+            option{
+              width: 100%;
+              outline: none;
+              border: none;
+              color: @color-content;
+              font-family: @font-OpenSans;
+              font-weight: 600;
+              font-size: @font-size-content;
+            }
+          }
+        }
+        
+        /*phone information*/
+        .footer_top_contact_form_phone{
+          width: 100%;
+          background-color: @color-wine;
+          padding: 5%;
+          h6{
+            color: @color-content;
+            font-family: @font-PassionOne;
+            font-weight: 600;
+            font-size: @font-size-menu-name - 5px;
+            border-bottom: 1px solid @color-yellow-text;
+            padding-bottom: 8%;
+            span{
+              color: @color-yellow-text;
+            }
+          }
+          .footer_top_contact_form_phone_description{
+            display: flex;
+            margin: 8% 0;
+            .footer_top_contact_form_phone_left{
+              .fa-phone-volume{
+                color: @color-yellow-text;
+              }
+            }
+
+            .footer_top_contact_form_phone_right{
+              width: 100%;
+              margin-left: 5%;
+              p{
+                font-family: @font-OpenSans;
+                font-weight: 600;
+                font-size: @font-size-content + 2px;
+                &:nth-child(2){
+                  margin: 3% 0 5%;
+                }
+              }
+              .footer_top_contact_form_phone_right_social{
+                width: 70%;
+                display: flex;
+                a{
+                  width: 32%;
+                  img{
+                    width: 100%;
+                  }
+                  &:nth-child(2){
+                    margin: 0 5%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*footer down copyright information*/
+  .footer_down{
+    display: flex;
+    justify-content: space-between;
+    background-color: @color-wine;
+    padding: 1% 8%;
+
+    /*copyright developer*/
+    .footer_down_left{
+      width: 40%;
+      display: flex;
+      justify-content: flex-start;
+      h5{
+        margin-left: 3%;
+        text-transform: uppercase;
+        font-family: @font-OpenSans;
+        font-weight: 700;
+        font-size: @font-size-content;
+        opacity: 0.7;
+      }
+    }
+
+    /*copyright cafe*/
+    .footer_down_right{
+      width: 20%;
+      display: flex;
+      justify-content: flex-end;
+      h5{
+        text-transform: uppercase;
+        font-family: @font-OpenSans;
+        font-weight: 700;
+        font-size: @font-size-content;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+/*footer  end*/

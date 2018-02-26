@@ -1,35 +1,27 @@
-//slick слайдер
+
 $(document).ready(function() {
 
 // Fixed top header navigation scroll events
-    $(window).scroll(function(){
-        if($(window).scrollTop() > 50) {
-            $('#header_top_navigation').css({ padding: '2% 5% 1.74%',backgroundImage: 'url("../img/bg-header.png")',  position:'fixed'});
-            $('.header_body_slider').css({ paddingTop: '6%'});
+   /* $(window).scroll(function(){
+        if($(window).scrollTop()) {
+            $('.header_top').css({ position:'fixed'});
         } else{
-            $('#header_top_navigation').css('background','transparent');
+            $('.header_top').css({ position:'relative'});
         }
-    });
+    });*/
 
 
-//slick слайдер
-    //header слайдер
-    $('.sl').slick({
+// slider slick
+
+    //header slider at index.html(home page) and menu.html(menu page)
+    $('.header_body_slider').slick({
         autoplay: true,
         autoplaySpeed: 3000,
         arrows: false,
         dots: true,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                }
-            }
-        ]
     });
 
-    //about слайдер
+    //about section at index.html(home page) slider
     $('.about_wrapper_right_slider').slick({
         autoplay: true,
         autoplaySpeed: 3000,
@@ -45,24 +37,19 @@ $(document).ready(function() {
         asNavFor: '.about_wrapper_right_slider',
     });
 
-    //banner posts слайдер
+    //banner posts at index.html(home page) slider
     $('.banner_post_slider').slick({
         arrows: false,
         dots: true,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                }
-            }
-        ]
     });
 
 
-//Buttons pills in menu
+//Buttons pills in menu at index.html(home page) and menu.html(menu page)
+
+    /*default active*/
     $('.menu_wrapper_burgers_slider').addClass('active');
 
+    /*toggle button pills*/
     $(".menu_wrapper_buttons_button").click(function() {
         $(".menu_wrapper_buttons_button").removeClass('active');
         $(this).addClass('active');
@@ -79,13 +66,16 @@ $(document).ready(function() {
     });
 
 
-//fresh ingredients open popup
+//popup fresh ingredients open at index.html(home page)
+
+    /*meat popup*/
     $('.perfection_wrapper_meat_button').click(function() {
         $(this).toggleClass('perfection_wrapper_button_active');
         $('.perfection_wrapper_meat_line').toggle( "slow");
         $('.perfection_wrapper_meat_description').toggle( "slow" );
     });
 
+    /*cheese popup*/
     $('.perfection_wrapper_cheese_button').click(function() {
         $(this).toggleClass('perfection_wrapper_button_active');
         $(this).css({'marginTop':'20%'});
@@ -93,12 +83,14 @@ $(document).ready(function() {
         $('.perfection_wrapper_cheese_description').toggle( "slow" );
     });
 
+    /*salad popup*/
     $('.perfection_wrapper_salad_button').click(function() {
         $(this).toggleClass('perfection_wrapper_button_active');
         $('.perfection_wrapper_salad_line').toggle( "slow");
         $('.perfection_wrapper_salad_description').toggle( "slow" );
     });
 
+    /*tomato popup*/
     $('.perfection_wrapper_tomato_button').click(function() {
         $(this).toggleClass('perfection_wrapper_button_active');
         $(this).css({'marginTop':'18%'});
@@ -107,7 +99,7 @@ $(document).ready(function() {
     });
 
 
-//counter section
+//counter section at index.html(home page)
     var div_top = $('.perfection').offset().top;
     $(window).scroll(function(){
         if($(window).scrollTop() > div_top){
@@ -137,19 +129,11 @@ $(document).ready(function() {
     });
 
 
-//counter in shopping cart
-    $('.order').click(function() {
-         $('.header_top_counter_buy').css({'display':'flex'});
-        var $counter = $(".header_top_counter_buy");
-        $counter.text(+$counter.text() + 1);
-        console.log($counter.text)
-    });
-
-
-//ajax load social content
+//ajax load social content from reviews.html to index.html(home page)
     $('.social_load_more').click(function(){
-        $('#social_wrapper').load('../ajax.html');
-    })
+         $('#social_wrapper').load('../reviews.html');
+         $('.social_load_more').css({ display: 'none'});
+    });
 
 
 })

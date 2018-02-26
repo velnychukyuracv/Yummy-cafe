@@ -1,51 +1,46 @@
-<!--popup enter account user-->
-<!--<div class="enter-popup" role="alert">
-    <div class="enter-popup-container">
-        <input type="email" name="email" placeholder="E-mail">
-        <input type="password" name="password" placeholder="Password">
-        <ul class="enter-buttons">
-            <li><a href="#">Enter</a></li>
-            <li><a href="#">Registration</a></li>
-        </ul>
-        <a href="#" class="cd-popup-close img-replace">Close</a>
-    </div>
-</div>-->
 
-<!--header section start-->
+<!--header  start-->
 <header class="header">
 
     <!--header top section with logo, navigation-->
     <div class="header_top" id="header_top_navigation">
-        <!--logo-->
+
+        <!--logo section-->
         <div class="header_top_logo">
-            <a href="#"> <img src="img/logo.png" alt="Yummy cafe logo"> </a>
+            <a href="index.html"> <img src="img/logo.png" alt="Yummy cafe logo"> </a>
         </div>
-        <!--navigation-->
+
+        <!--navigation section-->
         <nav>
             <ul class="header_top_nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="contacts.html">Contact</a></li>
                 <li>
-                    <a href="#">
+                    <a href="shopping.html">
                         <i class="fas fa-shopping-basket"></i>
                         <h6 class="header_top_counter_buy"> 0 </h6>
                     </a>
 
                 </li>
-                <li><a href="#" class="cd-popup-trigger"><i class="fas fa-user"></i> </a> </li>
+                <li><a href="#" class="popup_user"><i class="fas fa-user"></i> </a> </li>
             </ul>
         </nav>
 
     </div>
+    <!--header top section end-->
 
-    <!--header main slider-->
+    <!--header main slider section-->
     <div class="header_body">
+        <!--slider-->
         <div class="header_body_slider sl">
+            <!--slide-->
             <div class="sl_slide">
+                <!--slide picture-->
                 <div class="header_body_left">
                     <img class="img-responsive" src="img/headerPoster/posterSpecialBurger.png" alt="SpecialBurger">
                 </div>
+                <!--slide info-->
                 <div class="header_body_right">
                     <div class="header_body_right_name">
                         <h5>burger</h5>
@@ -61,10 +56,13 @@
                     </div>
                 </div>
             </div>
+            <!--slide-->
             <div class="sl_slide">
+                <!--slide picture-->
                 <div class="header_body_left">
                     <img class="img-responsive" src="img/headerPoster/posterBlack.png" alt="SpecialBurger">
                 </div>
+                <!--slide info-->
                 <div class="header_body_right">
                     <div class="header_body_right_name">
                         <h5>burger</h5>
@@ -80,10 +78,13 @@
                     </div>
                 </div>
             </div>
+            <!--slide-->
             <div class="sl_slide">
+                <!--slide picture-->
                 <div class="header_body_left">
                     <img class="img-responsive" src="img/headerPoster/posterCombo.png" alt="SpecialBurger">
                 </div>
+                <!--slide info-->
                 <div class="header_body_right">
                     <div class="header_body_right_name">
                         <h5>menu</h5>
@@ -101,8 +102,9 @@
             </div>
         </div>
     </div>
+    <!--header main slider section end-->
 
-    <!--button  made burger start-->
+    <!--button made burger section-->
     <button class="button_made_burgers">
             <span class="button_made_burgers_circle">
                 <img src="img/hamburger.png" alt="hamburger icon png">
@@ -110,14 +112,116 @@
         <h6>made burger</h6>
     </button>
 
+    <!--popup enter account user start-->
+    <div class="popup_enter" role="alert">
+        <div class="popup_enter_container">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <ul class="popup_enter_buttons">
+                <li><a href="shopping.html" id="enter">Sign In</a></li>
+                <li><a href="#" class="registration" >Sign Up</a></li>
+            </ul>
+            <a href="#" class="popup_enter_forgot">Forgotten password?</a>
+            <button class="popup_enter_close"> </button>
+        </div>
+    </div>
+    <!--popup enter account user end-->
+
+    <!--popup registration new user  account start-->
+    <div class="popup-registration" role="alert">
+
+        <form action="#" class="popup-registration-form">
+
+            <!--name-->
+            <div class="popup-registration-container">
+                <label for="name">First Name</label>
+                <input type="text" name="name"  id="name" required="required" placeholder="Name" pattern="[a-zA-Zа-яА-ЯёЁ0-9]{4,90}" title="Имя должно состоять от 4 до 90 символов. Допускаются только цифры, буквы русского и латинского алфавита" >
+                <p class="necessarily"> * </p>
+            </div>
+
+            <!--surname-->
+            <div class="popup-registration-container">
+                <label for="surname">Last Name</label>
+                <input type="text" name="surname" id="surname" required="required" placeholder="Surname">
+                <p class="necessarily"> * </p>
+            </div>
+
+            <!--gender-->
+            <div class="popup-registration-container-gender">
+                <p>Gender</p>
+                <input type="radio" name="gender" id="male"> <p>Male</p>
+                <label for="male"></label>
+                <input type="radio" name="gender" id="female"> <p>Female</p>
+                <label for="female"></label>
+            </div>
+
+             <!--number phone-->
+            <div class="popup-registration-container">
+                <label for="phone">Number phone</label>
+                <input type="tel" name="phone" id="phone" required="required" placeholder="Your phone">
+                <p class="necessarily"> * </p>
+            </div>
+
+            <!--date of birth-->
+            <div class="popup-registration-container">
+                <label for="birth">Date of birth</label>
+                <input type="date" name="birth" id="birth">
+            </div>
+
+            <!--number personal cart-->
+            <div class="popup-registration-container">
+                <label for="cart">Number cart</label>
+                <input type="number" name="cart" id="cart" placeholder="Number cart" required="required">
+            </div>
+
+            <!-- e-mail -->
+            <div class="popup-registration-container">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="E-mail" required="required">
+                <p class="necessarily"> * </p>
+            </div>
+
+             <!--password-->
+            <div class="popup-registration-container">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" required="required">
+                <p class="necessarily"> * </p>
+            </div>
+
+            <!--confirm password-->
+            <div class="popup-registration-container">
+                <label for="re-password">Confirm Password</label>
+                <input type="password" name="re-password" id="re-password" placeholder="Confirm Password" required title="">
+                <p class="necessarily"> * </p>
+            </div>
+
+            <!--confirm for registration personal information-->
+            <div class="popup-registration-container-confirm">
+                <input type="checkbox" name="confirm" id="confirm" title="">
+                <label for="confirm" id="confirm-text">Consent to the processing of personal data?</label>
+                <p class="necessarily"> * </p>
+            </div>
+
+            <!--button registration-->
+            <div class="popup-registration-container-enter">
+                <a href="#" class="popup-registration-button" id="submit">Registration</a>
+            </div>
+
+            <button class="popup-registration-close"> </button>
+
+        </form>
+
+    </div>
+    <!--popup registration new user  account end-->
+
 </header>
-<!--header section end-->
+<!--header  end-->
 
 
 <!--footer start-->
 <footer class="footer">
 
-    <!--footer top contacts section-->
+    <!--footer top contacts section start-->
     <div class="footer_top">
 
         <!--map-->
@@ -128,6 +232,8 @@
             <h4><span>our </span> address</h4>
             <div class="footer_top_contact_form">
                 <div class="footer_top_contact_form_address">
+
+                    <!--address section-->
                     <select>
                         <option value="Sunset">28 Sunset Ave, New York</option>
                         <option value="Ronald">15 Ronald Ave, New York</option>
@@ -156,17 +262,24 @@
         </div>
 
     </div>
+    <!--footer top contacts section end-->
 
-    <!--footer down copyright section-->
+    <!--footer down copyright section start-->
     <div class="footer_down">
+
+        <!--copyright developer-->
         <div class="footer_down_left">
             <img src="img/copyright.png" alt="copyright">
             <h5> velnychuk yura developer</h5>
         </div>
+
+        <!--copyright cafe-->
         <div class="footer_down_right">
             <h5> yummy cafe @2018 </h5>
         </div>
+
     </div>
+    <!--footer down copyright section end-->
 
 </footer>
-<!--footer start-->
+<!--footer end-->

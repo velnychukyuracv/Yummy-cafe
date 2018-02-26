@@ -22,13 +22,13 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Passion+One:400,700" rel="stylesheet">
 
     <!--Style-->
-    <link href="css/contacts.css" rel="stylesheet">
+    <link href="css/shopping.css" rel="stylesheet">
 
     <link rel="import" href="header-footer.html">
 
 </head>
 
-<body id="contacts">
+<body id="shopping_basket">
 
 <!--Header section start-->
 <script>
@@ -38,8 +38,191 @@
 </script>
 <!--Header section end-->
 
+<!--order shopping basket start-->
+<main class="shopping">
 
+    <h3>Your <span>order</span> </h3>
+    <hr>
 
+    <!--wrapper shopping basket information start-->
+    <div class="shopping_wrapper">
+
+        <!--section order-->
+        <div class="shopping_order">
+
+            <!--section with order title information-->
+            <div class="shopping_order_title">
+
+                <div class="shopping_order_title_N">
+                    <p>№</p>
+                </div>
+                <div class="shopping_order_title_img">
+                    <p>Picture</p>
+                </div>
+                <div class="shopping_order_title_goods">
+                    <p>Goods</p>
+                </div>
+                <div class="shopping_order_title_price">
+                    <p>Price</p>
+                </div>
+                <div class="shopping_order_title_quantity">
+                    <p>Quantity</p>
+                </div>
+                <div class="shopping_order_title_total">
+                    <p>Total price</p>
+                </div>
+
+            </div>
+
+            <!--section of goods-->
+            <div class="shopping_order_goods">
+
+                <div class="shopping_order_goods_N">
+                    <p> 1 </p>
+                </div>
+                <div class="shopping_order_goods_img">
+                    <img src="img/menu/california.png" alt="burger california">
+                </div>
+                <div class="shopping_order_goods_good">
+                    <h6>Burger California</h6>
+                </div>
+                <div class="shopping_order_goods_price">
+                    <span class="shopping_order_goods_price_position_1">12.99</span>
+                    <p> $ </p>
+                </div>
+                <div class="shopping_order_goods_quantity">
+                    <input type="button" name="plus" value="+" class="shopping_order_goods_quantity_plus_1">
+                    <input type="text" name="value" value="1" class="shopping_order_goods_quantity_value_1">
+                    <input type="button" name="minus" value="-" class="shopping_order_goods_quantity_minus_1" >
+                </div>
+                <div class="shopping_order_goods_total">
+                    <span class="shopping_order_goods_total_value_1">12.99 </span>
+                    <p> $ </p>
+                </div>
+
+            </div>
+            <div class="shopping_order_goods">
+
+                <div class="shopping_order_goods_N">
+                    <p> 2 </p>
+                </div>
+                <div class="shopping_order_goods_img">
+                    <img src="img/menu/potatoFrie.png" alt="potatoFri">
+                </div>
+                <div class="shopping_order_goods_good">
+                    <h6>Potato Fri</h6>
+                </div>
+                <div class="shopping_order_goods_price">
+                    <span class="shopping_order_goods_price_position_2">8.99</span>
+                    <p> $ </p>
+                </div>
+                <div class="shopping_order_goods_quantity">
+                    <input type="button" name="plus" value="+" class="shopping_order_goods_quantity_plus_2">
+                    <input type="text" name="value" value="1" class="shopping_order_goods_quantity_value_2">
+                    <input type="button" name="minus" value="-" class="shopping_order_goods_quantity_minus_2" >
+                </div>
+                <div class="shopping_order_goods_total">
+                    <span class="shopping_order_goods_total_value_2">12.99 </span>
+                    <p> $ </p>
+                </div>
+
+            </div>
+            <div class="shopping_order_goods">
+
+                <div class="shopping_order_goods_N">
+                    <p> 3 </p>
+                </div>
+                <div class="shopping_order_goods_img">
+                    <img src="img/menu/Cola.png" alt="cola">
+                </div>
+                <div class="shopping_order_goods_good">
+                    <h6>Drink  COCA-COLA</h6>
+                </div>
+                <div class="shopping_order_goods_price">
+                    <span class="shopping_order_goods_price_position_3">12.99</span>
+                    <p> $ </p>
+                </div>
+                <div class="shopping_order_goods_quantity">
+                    <input type="button" name="plus" value="+" class="shopping_order_goods_quantity_plus_3">
+                    <input type="text" name="value" value="1" class="shopping_order_goods_quantity_value_3">
+                    <input type="button" name="minus" value="-" class="shopping_order_goods_quantity_minus_3" >
+                </div>
+                <div class="shopping_order_goods_total">
+                    <span class="shopping_order_goods_total_value_3">12.99 </span>
+                    <p> $ </p>
+                </div>
+
+            </div>
+
+            <!--section total price-->
+            <div class="shopping_order_total">
+
+                <div class="shopping_order_total_title">
+                    <h5>Total order </h5>
+                </div>
+                <div class="shopping_order_total_price">
+                    <span class="shopping_total_order"> 12.99 </span>
+                    <p> $ </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--section delivery-->
+        <div class="shopping_delivery">
+
+            <h5>Delivery</h5>
+
+            <!--sections tabs buttons-->
+            <ul class="shopping_delivery_tabs">
+                <li class="active" data-tab="tab-1">Delivery</li>
+                <li data-tab="tab-2">Self-transport</li>
+            </ul>
+
+            <!--sections tabs content-->
+            <ul class="shopping_delivery_tab_content">
+
+                <!--delivery content-->
+                <li class="active" id="tab-1">
+                     <img src="img/delivery_daily.png" alt="delivery">
+                     <h6> Enter the delivery address : </h6>
+                     <input type="text" name="name" id="name" placeholder="Enter your name">
+                     <input type="text" name="address" id="address" placeholder="Enter your address">
+                     <input type="tel" name="phone" id="number_phone" placeholder="Enter your phone">
+                     <p>The cost of delivery of 5$ for the order amount is less than 80$. For the amount of the order 500$ delivery is free of charge.  <br><br>DELIVERY OPERATION<br>10:00-00:30 </p>
+                </li>
+
+                <!--self-transport information-->
+                <li id="tab-2">
+                    <img src="img/delivery_self.png" alt="delivery">
+                    <p>If you do not want to wait for our courier, you can pick up your order at one of our branches. Fast and economical! <br><br>WORK OF INSTITUTIONS (Mon-Thu)<br>10:00-22:00</p>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+    <!--wrapper shopping basket information end-->
+
+    <!--wrapper shopping basket pay start-->
+    <div class="shopping_pay">
+         <button class="shopping_pay_button"> Payment on receipt</button>
+         <a href="https://www.privat24.ua/" target="_blank" class="shopping_pay_button_online"> Pay online </a>
+    </div>
+    <!--wrapper shopping basket pay end-->
+
+    <!--popup Thank you for your order start-->
+    <div class="shopping_popup_thank" role="alert">
+        <div class="shopping_popup_thank_container">
+           <h6>Thank you for your order</h6>
+        </div>
+    </div>
+    <!--popup Thank you for your order end-->
+
+</main>
+<!--order shopping basket end-->
 
 <!--Footer section start-->
 <script>
@@ -68,6 +251,8 @@
         <script  src="js/index.js"></script>
         <script  src="js/video.js"></script>
         <script  src="js/popup.js"></script>
+        <script  src="js/order.js"></script>
+        <script  src="js/counter-order.js"></script>
 
 </body>
 </html>

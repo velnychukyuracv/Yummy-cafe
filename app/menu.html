@@ -24,137 +24,35 @@
     <!--Style-->
     <link href="css/menu.css" rel="stylesheet">
 
+    <link rel="import" href="header-footer.html">
+
 </head>
 
 <body id="menu">
 
-<!--header section start-->
-    <header class="header">
+<!--Header section start-->
+<script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('header');
+    document.body.appendChild(content.cloneNode(true));
+</script>
+<!--Header section end-->
 
-        <!--header top section with logo, navigation-->
-        <div class="header_top" id="header_top_navigation">
-            <!--logo-->
-            <div class="header_top_logo">
-                <a href="#"> <img src="img/logo.png" alt="Yummy cafe logo"> </a>
-            </div>
-            <!--navigation-->
-            <nav>
-                <ul class="header_top_nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="contacts.html">Contact</a></li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-shopping-basket"></i>
-                            <h6 class="header_top_counter_buy"> 0 </h6>
-                        </a>
-
-                    </li>
-                    <li><a href="#" class="cd-popup-trigger"><i class="fas fa-user"></i> </a> </li>
-                </ul>
-            </nav>
-            <!--popup enter account user-->
-            <!--<div class="cd-popup" role="alert">
-<div class="cd-popup-container">
- <input type="email" name="email" placeholder="E-mail">
- <input type="password" name="password" placeholder="Password">
- <ul class="cd-buttons">
-     <li><a href="#">Enter</a></li>
-     <li><a href="#">Registration</a></li>
- </ul>
- <a href="#" class="cd-popup-close img-replace">Close</a>
-</div> &lt;!&ndash; cd-popup-container &ndash;&gt;
-</div> &lt;!&ndash; cd-popup &ndash;&gt;-->
-        </div>
-
-    <!--header main slider-->
-    <div class="header_body">
-        <div class="header_body_slider sl">
-            <div class="sl_slide">
-                <div class="header_body_left">
-                    <img class="img-responsive" src="img/headerPoster/posterSpecialBurger.png" alt="SpecialBurger">
-                </div>
-                <div class="header_body_right">
-                    <div class="header_body_right_name">
-                        <h5>burger</h5>
-                        <h4><span>big</span> daddy</h4>
-                        <h5>With fried French fries</h5>
-                    </div>
-                    <div class="header_body_right_prise">
-                        <p class="header_body_right_prise_sale"> $12.99 </p>
-                        <p class="header_body_right_prise_regular"> $17.99 </p>
-                    </div>
-                    <div class="header_body_right_order">
-                        <button class="header_body_right_order_button order">order</button>
-                    </div>
-                </div>
-            </div>
-            <div class="sl_slide">
-                <div class="header_body_left">
-                    <img class="img-responsive" src="img/headerPoster/posterBlack.png" alt="SpecialBurger">
-                </div>
-                <div class="header_body_right">
-                    <div class="header_body_right_name">
-                        <h5>burger</h5>
-                        <h4>godzilla</h4>
-                        <h5>with the freshest black buns</h5>
-                    </div>
-                    <div class="header_body_right_prise">
-                        <p class="header_body_right_prise_sale"> $15.99 </p>
-                        <p class="header_body_right_prise_regular"> $18.99 </p>
-                    </div>
-                    <div class="header_body_right_order">
-                        <input type="button" class="header_body_right_order_button order" value="order">
-                    </div>
-                </div>
-            </div>
-            <div class="sl_slide">
-                <div class="header_body_left">
-                    <img class="img-responsive" src="img/headerPoster/posterCombo.png" alt="SpecialBurger">
-                </div>
-                <div class="header_body_right">
-                    <div class="header_body_right_name">
-                        <h5>menu</h5>
-                        <h4>combo </h4>
-                        <h5>together cheaper</h5>
-                    </div>
-                    <div class="header_body_right_prise">
-                        <p class="header_body_right_prise_sale"> $20.99 </p>
-                        <p class="header_body_right_prise_regular"> $25.99 </p>
-                    </div>
-                    <div class="header_body_right_order">
-                        <input type="button" class="header_body_right_order_button order" value="order">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--button  made burger start-->
-    <button class="button_made_burgers">
-            <span class="button_made_burgers_circle">
-                <img src="img/hamburger.png" alt="hamburger icon png">
-            </span>
-            <h6>made burger</h6>
-    </button>
-
-</header>
-<!--header section end-->
 
 <!--menu   start-->
-    <main>
+  <main>
 
         <h3><span> We </span> offer </h3>
         <hr>
 
-        <!--menu and buttons wrapper-->
+        <!--section menu and buttons wrapper-->
         <section class="menu_wrapper">
 
             <!--menu wrapper-->
             <div class="menu_wrapper_block">
-
-                <!--menu burgers part-->
+                <!--menu burgers part wrapper-->
                  <div class="menu_wrapper_burgers_slider menu burgers">
+
                             <div class="menu_wrapper_burgers_slider_slide ">
                                <div class="menu_wrapper_burgers_slider_slide_picture">
                                    <img src="img/menu/alaska.png" alt="alaska burger">
@@ -680,10 +578,11 @@
                                     <input type="button" name="order" class="menu_wrapper_burgers_slider_slide_order_button order" value="order">
                                 </div>
                             </div>
-                       </div>
 
-                <!--menu potato part-->
+                       </div>
+                <!--menu potato part wrapper-->
                  <div class="menu_wrapper_potato_slider menu potato">
+
                             <div class="menu_wrapper_potato_slider_slide ">
                                 <div class="menu_wrapper_potato_slider_slide_picture">
                                     <img src="img/menu/potato.png" alt="potato">
@@ -789,10 +688,11 @@
                                     <input type="button" name="order" class="menu_wrapper_potato_slider_slide_order_button order" value="order">
                                 </div>
                             </div>
-                        </div>
 
-                <!--menu drinks part-->
+                 </div>
+                <!--menu drinks part wrapper-->
                  <div class="menu_wrapper_drinks_slider menu drinks">
+
                             <div class="menu_wrapper_drinks_slider_slide ">
                                 <div class="menu_wrapper_drinks_slider_slide_picture">
                                     <img src="img/menu/Cola.png" alt="Coca-cola">
@@ -1117,79 +1017,33 @@
                                     <input type="button" name="order" class="menu_wrapper_drinks_slider_slide_order_button order" value="order">
                                 </div>
                             </div>
-                        </div>
+
+                 </div>
             </div>
 
             <!--buttons menu section-->
             <div class="menu_wrapper_buttons">
+                <!--burgers button-->
                 <input type="button" class="menu_wrapper_buttons_button burgers active" value="burgers" data-target="burgers">
+                <!--potato button-->
                 <input type="button" class="menu_wrapper_buttons_button potato" value="potato" data-target="potato">
+                <!--drinks button-->
                 <input type="button" class="menu_wrapper_buttons_button drinks" value="drinks" data-target="drinks">
             </div>
 
         </section>
 
-    </main>
+  </main>
  <!--menu  end-->
 
 
-
-<!--footer start-->
-    <footer class="footer">
-
-    <!--footer top contacts section-->
-    <div class="footer_top">
-
-        <!--map-->
-        <img class="footer_top_map" src="img/triangle2.png" alt="triangle">
-
-        <!--contacts-->
-        <div class="footer_top_contact">
-            <h4><span>our </span> address</h4>
-            <div class="footer_top_contact_form">
-                <div class="footer_top_contact_form_address">
-                    <select>
-                        <option value="Sunset">28 Sunset Ave, New York</option>
-                        <option value="Ronald">15 Ronald Ave, New York</option>
-                        <option value="Haverford">20 Haverford Rd, New York</option>
-                    </select>
-                </div>
-                <div class="footer_top_contact_form_phone">
-                    <h6>Yummy  <span>cafe</span></h6>
-                    <div class="footer_top_contact_form_phone_description">
-                        <div class="footer_top_contact_form_phone_left">
-                            <i class="fas fa-phone-volume fa-2x"></i>
-                        </div>
-                        <div class="footer_top_contact_form_phone_right">
-                            <p>510-540-2059</p>
-                            <p>513-375-9485</p>
-                            <div class="footer_top_contact_form_phone_right_social">
-                                <a href="https://www.facebook.com/" target="_blank"> <img src="img/social/facebook-white.png" alt="facebook"> </a>
-                                <a href="https://plus.google.com" target="_blank"> <img src="img/social/google-plus-white.png" alt="google-plus"> </a>
-                                <a href="https://twitter.com" target="_blank"> <img src="img/social/twitter-white.png" alt="twitter"> </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!--footer down copyright section-->
-    <div class="footer_down">
-        <div class="footer_down_left">
-            <img src="img/copyright.png" alt="copyright">
-            <h5> velnychuk yura developer</h5>
-        </div>
-        <div class="footer_down_right">
-            <h5> yummy cafe @2018 </h5>
-        </div>
-    </div>
-
-</footer>
-<!--footer start-->
+<!--Footer section start-->
+<script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('footer');
+    document.body.appendChild(content.cloneNode(true));
+</script>
+<!--Footer section end-->
 
     <!--scripts-->
 
@@ -1199,6 +1053,9 @@
      <!--jquery-->
      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
+    <!--cookie-->
+    <script type="text/javascript" src="http://yoursite.ru/js/jquery.cookie.js"></script>
+
      <!-- slick слайдер -->
      <script  type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 
@@ -1207,9 +1064,11 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" type="text/javascript"></script>
 
      <!-- js -->
-     <script  src="js/index.js"></script>
-      <script  src="js/video.js"></script>
-     <script  src="js/popup.js"></script>
+    <script  src="js/index.js"></script>
+    <script  src="js/video.js"></script>
+    <script  src="js/popup.js"></script>
+    <script  src="js/order.js"></script>
+    <script  src="js/counter-order.js"></script>
 
 </body>
 </html>

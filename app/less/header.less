@@ -1,0 +1,507 @@
+@import "constants";
+
+
+
+/*header start*/
+header {
+  background-image: url("../img/bg.png");
+
+  /*header top information*/
+  .header_top {
+    background-image: url("../img/bg-header.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+
+    /*logo section*/
+    .header_top_logo{
+      width: 30%;
+    }
+
+    /*navigation section*/
+    nav {
+      width: 30%;
+      display: flex;
+      .header_top_nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        li {
+          position: relative;
+          cursor: pointer;
+          a {
+            font-family: @font-OpenSans;
+            font-size: @font-size-content;
+            font-weight: 700;
+            text-decoration: none;
+            color: @color-nav;
+            padding: 5px;
+            &:hover {
+              color: @color-content;
+            }
+          }
+          &:nth-child(4){
+            width: 10%;
+            a{
+              width: 100%;
+            }
+          }
+        }
+      }
+      .header_top_counter_buy{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: @color-button-active;
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-family: @font-OpenSans;
+        font-size: 12px;
+        right:1%;
+        top: 1%;
+      }
+    }
+  }
+
+   /*header main information*/
+  .header_body {
+    padding-top: 6%;
+
+    /*slider wrapper*/
+    .sl {
+
+      /*slide*/
+      .sl_slide {
+        display: flex;
+        border: none;
+        outline: none;
+        .header_body_left {
+          width: 50%;
+          img {
+            margin-right: 2%;
+          }
+        }
+        .header_body_right {
+          width: 50%;
+          margin: 15% 0 8% 8%;
+          padding: 2%;
+          .header_body_right_name {
+            line-height: 0.8;
+            h5 {
+              color: @color-wine;
+              text-transform: uppercase;
+              font-size: @font-size-content;
+              font-weight: 700;
+              padding-left: 1%;
+            }
+            h4 {
+              color: @color-content;
+              text-transform: uppercase;
+              font-size: @font-size-post;
+              font-family: @font-PassionOne;
+              font-weight: 700;
+              span {
+                color: @color-wine;
+              }
+            }
+          }
+          .header_body_right_prise {
+            display: flex;
+            padding-left: 1%;
+            margin: 3% 0;
+            .header_body_right_prise_sale {
+              font-size: @font-size-banner;
+              font-family: @font-OpenSans;
+              font-weight: 800;
+            }
+            .header_body_right_prise_regular {
+              font-size: @font-size-menu-name;
+              font-family: @font-OpenSans;
+              font-weight: 400;
+              padding: 2% 0 0 3%;
+              color: @color-nav;
+              text-decoration: line-through;
+
+            }
+          }
+          .header_body_right_order {
+            padding-left: 1%;
+            .header_body_right_order_button{
+              cursor: pointer;
+              border: 2px solid @color-nav;
+              background-color: @color-yellow-text;
+              color: @color-nav;
+              text-transform: uppercase;
+              font-family: @font-PassionOne;
+              font-size: @font-size-banner;
+              padding: 1% 4%;
+              outline: none;
+              &:hover{
+                color: @color-content;
+                border: 2px solid @color-content;
+              }
+            }
+          }
+        }
+      }
+      .slick-dots {
+        position: absolute;
+        display: block;
+        width: 10%;
+        left: 59%;
+        list-style: none;
+        text-align: center;
+        bottom: 25%;
+        z-index: 5;
+        li {
+          margin: 5px;
+          button {
+            border-radius: 50%;
+            width: 5px;
+            height: 5px;
+            background-color: @color-content;
+            opacity: 0.6;
+            &::before {
+              content: '';
+            }
+          }
+        }
+        .slick-active button {
+          background-color: @color-content;
+          opacity: 1;
+        }
+      }
+    }
+    .slick-dotted.slick-slider {
+      margin-bottom: 0;
+    }
+    .slick-list{
+      z-index: 10;
+    }
+  }
+
+  /*burger made button*/
+  .button_made_burgers{
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    border: none;
+    outline: none;
+    background-color: @color-wine-menu;
+    position: fixed;
+    top: 80%;
+    z-index: 100;
+    cursor: pointer;
+    height: 60px;
+    border-radius: 30px;
+    opacity: 0.95;
+    span{
+      border-radius: 50%;
+      width: 60px;
+      height: 50px;
+      margin: 0 4%;
+      background-color: @color-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 70%;
+      }
+    }
+    h6{
+      color: @color-content;
+      font-family: @font-PassionOne;
+      font-size: @font-size-content;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    &:hover{
+      background-color: @color-wine-menu;
+      opacity: 1;
+    }
+  }
+}
+/*header end*/
+
+
+/*popup*/
+
+/*popup enter user start*/
+.popup_enter{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  z-index: 500;
+  .popup_enter_container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 400px;
+    background: @color-content;
+    border-radius: 2px;
+    transform: translateY(-40px);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    padding: 10px ;
+    left: 65%;
+    top:10%;
+    input{
+      margin: 5px 0;
+      padding: 10px;
+      color: @color-wine;
+      border: 2px solid @color-wine;
+    }
+    .popup_enter_buttons{
+      display: flex;
+      justify-content: space-between;
+      margin: 2% 0;
+      li{
+        width: 46%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          width: 100%;
+          text-decoration: none;
+          outline: none;
+          padding: 2%;
+          cursor: pointer;
+          border: 2px solid @color-wine;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: @color-content;
+          text-transform: uppercase;
+          font-family: @font-PassionOne;
+          font-size: @font-size-menu-name - 5px;
+          color: @color-wine;
+          &:hover{
+            color: @color-yellow-text;
+            border: 2px solid @color-yellow-text;
+          }
+        }
+      }
+    }
+    .popup_enter_forgot{
+      text-decoration: none;
+      color: @color-gray;
+      font-size: @font-size-menu-description;
+      padding-left: 2%;
+      &:hover{
+        color: @color-yellow-text;
+      }
+    }
+    .popup_enter_close{
+      position: absolute;
+      top: -25px;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      overflow: visible;
+      color: transparent;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      &::after, &::before {
+        content: '-';
+        position: absolute;
+        top: 12px;
+        width: 14px;
+        height: 3px;
+        background-color: @color-yellow-text;
+      }
+      &::before {
+        transform: rotate(45deg);
+        left: 8px;
+      }
+      &::after {
+        transform: rotate(-45deg);
+        right: 8px;
+      }
+    }
+  }
+}
+.popup_enter.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.is-visible .popup_enter_container {
+  transform: translateY(0);
+}
+/*popup enter user end*/
+
+
+/*popup registration new user start*/
+.popup-registration{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  transition: opacity 0.3s 0s, visibility 0s 0.5s;
+  z-index: 500;
+  .popup-registration-form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 35%;
+    height: 90%;
+    background: @color-content;
+    border-radius: 2px;
+    transform: translateY(-40px);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    padding: 10px ;
+    margin: 1% auto;
+    top:10%;
+
+    .popup-registration-container{
+      display: flex;
+      margin: 2% 1% 1%;
+      width: 95%;
+      label{
+        width: 25%;
+        color: @color-wine;
+        font-size: @font-size-standard;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+      input{
+        width: 65%;
+        padding: 10px;
+        color: @color-wine;
+        border: 2px solid @color-wine;
+        margin: 0 2%;
+      }
+      p{
+        width: 5%;
+        color: red;
+        font-size: @font-size-content;
+      }
+    }
+
+    .popup-registration-container-gender{
+      display: flex;
+      margin: 2% 1% 1%;
+      width: 95%;
+      p{
+        width: 25%;
+        color: @color-wine;
+        font-size: @font-size-standard;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+      input[name=gender]{
+        outline: none;
+        margin: 0 2%;
+      }
+    }
+
+    .popup-registration-container-confirm{
+      display: flex;
+      align-items: center;
+      margin: 4%;
+      input[name=confrm]{
+        width: 5%;
+
+      }
+      label{
+        color: @color-wine;
+        font-size: @font-size-standard;
+        font-weight: bold;
+        margin: 0 2%;
+      }
+      p{
+        color: red;
+        font-size: @font-size-content;
+      }
+
+    }
+
+    .popup-registration-container-enter{
+      display: flex;
+      justify-content: flex-end;
+      .popup-registration-button{
+        width: 35%;
+        text-decoration: none;
+        outline: none;
+        padding: 1%;
+        cursor: pointer;
+        border: 2px solid @color-wine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: @color-content;
+        text-transform: uppercase;
+        font-family: @font-PassionOne;
+        font-size: @font-size-menu-name - 5px;
+        color: @color-wine;
+        &:hover{
+          color: @color-yellow-text;
+          border: 2px solid @color-yellow-text;
+        }
+      }
+    }
+
+    .popup-registration-close{
+      position: absolute;
+      top: -25px;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      overflow: visible;
+      color: transparent;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      &::after, &::before {
+        content: '-';
+        position: absolute;
+        top: 12px;
+        width: 14px;
+        height: 3px;
+        background-color: @color-yellow-text;
+      }
+      &::before {
+        transform: rotate(45deg);
+        left: 8px;
+      }
+      &::after {
+        transform: rotate(-45deg);
+        right: 8px;
+      }
+    }
+  }
+
+}
+.popup-registration.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.is-visible .popup-registration-container {
+  transform: translateY(0);
+}
+/**popup registration new user  end*/
+
+

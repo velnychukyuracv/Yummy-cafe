@@ -1,0 +1,190 @@
+/*font family type constants*/
+/*font size constants*/
+/*colors constants*/
+/*mixin constants*/
+.standard {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+.standard_box {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*footer  start*/
+footer {
+  /*footer top information*/
+  /*footer down copyright information*/
+}
+footer .footer_top {
+  background-image: url("../img/map.png");
+  padding-bottom: 10%;
+  /*footer top map*/
+  /*footer top contact information*/
+}
+footer .footer_top .footer_top_map {
+  width: 100%;
+}
+footer .footer_top .footer_top_contact {
+  margin: 5% 0 0 8%;
+  width: 18%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*contact*/
+}
+footer .footer_top .footer_top_contact h4 {
+  color: #FFA726;
+  text-transform: uppercase;
+  font-family: Passion One, cursive;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+footer .footer_top .footer_top_contact h4 span {
+  color: #5D4037;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form {
+  /*address information*/
+  /*phone information*/
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_address {
+  width: 100%;
+  background-color: #FFA62A;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_address select {
+  background-color: #FFA62A;
+  padding: 3% 0;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_address select option {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_phone {
+  width: 100%;
+  background-color: #5D4037;
+  padding: 5%;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_phone h6 {
+  color: #fff;
+  font-family: Passion One, cursive;
+  font-weight: 600;
+  font-size: 25px;
+  border-bottom: 1px solid #FFA62A;
+  padding-bottom: 8%;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_phone h6 span {
+  color: #FFA62A;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_phone .footer_top_contact_form_phone_description {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8% 0;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_phone .footer_top_contact_form_phone_description .footer_top_contact_form_phone_left .fa-phone-volume {
+  color: #FFA62A;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_phone .footer_top_contact_form_phone_description .footer_top_contact_form_phone_right {
+  width: 100%;
+  margin-left: 5%;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_phone .footer_top_contact_form_phone_description .footer_top_contact_form_phone_right p {
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_phone .footer_top_contact_form_phone_description .footer_top_contact_form_phone_right p:nth-child(2) {
+  margin: 3% 0 5%;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_phone .footer_top_contact_form_phone_description .footer_top_contact_form_phone_right .footer_top_contact_form_phone_right_social {
+  width: 70%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_phone .footer_top_contact_form_phone_description .footer_top_contact_form_phone_right .footer_top_contact_form_phone_right_social a {
+  width: 32%;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_phone .footer_top_contact_form_phone_description .footer_top_contact_form_phone_right .footer_top_contact_form_phone_right_social a img {
+  width: 100%;
+}
+footer .footer_top .footer_top_contact .footer_top_contact_form .footer_top_contact_form_phone .footer_top_contact_form_phone_description .footer_top_contact_form_phone_right .footer_top_contact_form_phone_right_social a:nth-child(2) {
+  margin: 0 5%;
+}
+footer .footer_down {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #5D4037;
+  padding: 1% 8%;
+  /*copyright developer*/
+  /*copyright cafe*/
+}
+footer .footer_down .footer_down_left {
+  width: 40%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+footer .footer_down .footer_down_left h5 {
+  margin-left: 3%;
+  text-transform: uppercase;
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  opacity: 0.7;
+}
+footer .footer_down .footer_down_right {
+  width: 20%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+footer .footer_down .footer_down_right h5 {
+  text-transform: uppercase;
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  opacity: 0.7;
+}
+/*footer  end*/

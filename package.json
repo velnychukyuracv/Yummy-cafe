@@ -4,7 +4,8 @@
   "description": "Yummy burger cafe project final",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "inputmask": "^4.0.0-beta.14"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",

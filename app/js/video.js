@@ -1,7 +1,6 @@
-
 $(document).ready(function() {
 
-//Video popup
+    //Video popup at index.html(home page)
     $('.popup').magnificPopup({
         type: 'iframe',
         mainClass: 'mfp-fade',

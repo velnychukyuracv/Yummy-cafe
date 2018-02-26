@@ -25,129 +25,28 @@
     <!--Style-->
     <link href="css/style.css" rel="stylesheet">
 
+    <link rel="import" href="header-footer.html">
+
 </head>
 
 <body id="home">
 
-<!--popup enter account user-->
-<!--<div class="enter-popup" role="alert">
-    <div class="enter-popup-container">
-        <input type="email" name="email" placeholder="E-mail">
-        <input type="password" name="password" placeholder="Password">
-        <ul class="enter-buttons">
-            <li><a href="#">Enter</a></li>
-            <li><a href="#">Registration</a></li>
-        </ul>
-        <a href="#" class="cd-popup-close img-replace">Close</a>
-    </div>
-</div>-->
-
- <!--header section start-->
-    <header class="header">
-
-        <!--header top section with logo, navigation-->
-          <div class="header_top" id="header_top_navigation">
-              <!--logo-->
-                 <div class="header_top_logo">
-                     <a href="#"> <img src="img/logo.png" alt="Yummy cafe logo"> </a>
-                 </div>
-              <!--navigation-->
-                 <nav>
-                     <ul class="header_top_nav">
-                         <li><a href="index.html">Home</a></li>
-                         <li><a href="menu.html">Menu</a></li>
-                         <li><a href="contacts.html">Contact</a></li>
-                         <li>
-                             <a href="#">
-                                 <i class="fas fa-shopping-basket"></i>
-                                 <h6 class="header_top_counter_buy"> 0 </h6>
-                             </a>
-
-                         </li>
-                         <li><a href="#" class="cd-popup-trigger"><i class="fas fa-user"></i> </a> </li>
-                     </ul>
-                 </nav>
-
-          </div>
-
-        <!--header main slider-->
-          <div class="header_body">
-              <div class="header_body_slider sl">
-                  <div class="sl_slide">
-                      <div class="header_body_left">
-                          <img class="img-responsive" src="img/headerPoster/posterSpecialBurger.png" alt="SpecialBurger">
-                      </div>
-                      <div class="header_body_right">
-                          <div class="header_body_right_name">
-                              <h5>burger</h5>
-                              <h4><span>big</span> daddy</h4>
-                              <h5>With fried French fries</h5>
-                          </div>
-                          <div class="header_body_right_prise">
-                              <p class="header_body_right_prise_sale"> $12.99 </p>
-                              <p class="header_body_right_prise_regular"> $17.99 </p>
-                          </div>
-                          <div class="header_body_right_order">
-                              <button class="header_body_right_order_button order">order</button>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="sl_slide">
-                      <div class="header_body_left">
-                          <img class="img-responsive" src="img/headerPoster/posterBlack.png" alt="SpecialBurger">
-                      </div>
-                      <div class="header_body_right">
-                          <div class="header_body_right_name">
-                              <h5>burger</h5>
-                              <h4>godzilla</h4>
-                              <h5>with the freshest black buns</h5>
-                          </div>
-                          <div class="header_body_right_prise">
-                              <p class="header_body_right_prise_sale"> $15.99 </p>
-                              <p class="header_body_right_prise_regular"> $18.99 </p>
-                          </div>
-                          <div class="header_body_right_order">
-                              <input type="button" class="header_body_right_order_button order" value="order">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="sl_slide">
-                      <div class="header_body_left">
-                          <img class="img-responsive" src="img/headerPoster/posterCombo.png" alt="SpecialBurger">
-                      </div>
-                      <div class="header_body_right">
-                          <div class="header_body_right_name">
-                              <h5>menu</h5>
-                              <h4>combo </h4>
-                              <h5>together cheaper</h5>
-                          </div>
-                          <div class="header_body_right_prise">
-                              <p class="header_body_right_prise_sale"> $20.99 </p>
-                              <p class="header_body_right_prise_regular"> $25.99 </p>
-                          </div>
-                          <div class="header_body_right_order">
-                              <input type="button" class="header_body_right_order_button order" value="order">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-        <!--button  made burger start-->
-        <button class="button_made_burgers">
-            <span class="button_made_burgers_circle">
-                <img src="img/hamburger.png" alt="hamburger icon png">
-            </span>
-            <h6>made burger</h6>
-        </button>
-
-    </header>
- <!--header section end-->
+<!--Header section start-->
+<script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('header');
+    document.body.appendChild(content.cloneNode(true));
+</script>
+<!--Header section end-->
 
  <!--section about us  start-->
     <aside class="about" >
+
         <h3><span>about</span> yummy cafe</h3>
+
         <div class="about_wrapper">
+
+            <!--section about us left -->
             <div class="about_wrapper_left">
                 <div class="about_wrapper_left_title">
                     <div class="about_wrapper_left_title_square"><h4>B</h4></div>
@@ -159,6 +58,8 @@
                         <br>
                         It is the meeting place in Grahamstown for family, friends, business associates and couples – in short, a place for everyone from early morning breakfast to drinks late at night.
                     </p>
+
+                     <!--section about us left social  -->
                     <div class="about_wrapper_left_content_social">
                         <h5>our social life</h5>
                         <div class="about_wrapper_left_content_social_link">
@@ -167,9 +68,14 @@
                             <a href="https://twitter.com" target="_blank"> <img src="img/social/twitter.png" alt="twitter"> </a>
                         </div>
                     </div>
+
                 </div>
             </div>
+
+            <!--section right with slider-->
             <div class="about_wrapper_right">
+
+                <!--section right with top slider-->
                 <div class="about_wrapper_right_slider">
                      <div class="about_wrapper_right_slider_slide">
                         <img src="img/about/about1.png" alt="yummy cafe">
@@ -184,6 +90,8 @@
                         <img src="img/about/about4.JPG" alt="yummy cafe">
                     </div>
                 </div>
+
+                <!--section right with down slider-->
                 <div class="about_wrapper_right_down_slider">
                     <div class="about_wrapper_right_slider_slide">
                         <p>Beautiful exterior of the cafe</p>
@@ -198,8 +106,11 @@
                         <p>Satisfied visitors</p>
                     </div>
                 </div>
+
             </div>
+
         </div>
+
     </aside>
  <!--section about us  end-->
 
@@ -208,6 +119,7 @@
 
         <h3><span> We </span> offer </h3>
 
+         <!--menu wrapper-->
         <section class="menu_wrapper">
 
             <!--buttons menu parts-->
@@ -585,20 +497,22 @@
             <!--link go to menu for more burgers and drinks-->
             <div class="menu_wrapper_load">
                <a href="menu.html" class="menu_wrapper_load_button">
-                   load more
+                   menu
                  </a>
             </div>
 
         </section>
+
     </main>
  <!--menu  end-->
 
  <!--banner post start-->
    <article class="banner_post">
 
+       <!--slider-->
       <div class="banner_post_slider">
 
-          <!--banner -->
+          <!--banner  slide-->
           <div class="banner_post_slider_slide">
               <img src="img/mainPoster/mainPoster2.png" alt="burger poster yummy cafe">
               <div class="banner_post_slider_slide_slogan">
@@ -607,7 +521,7 @@
               </div>
           </div>
 
-          <!--video-->
+          <!--video slide-->
           <div class="banner_post_slider_slide">
               <img src="img/mainPoster/mainPoster1.jpg" alt="burger poster yummy cafe">
               <div class="banner_post_slider_slide_video">
@@ -624,13 +538,14 @@
  <!--banner post  end-->
 
  <!--section perfection ingredients  start-->
-   <aside class="perfection " >
+   <aside class="perfection" >
 
      <h3><span>only</span> fresh ingredients</h3>
 
+     <!--wrapper perfection ingredients -->
      <div class="perfection_wrapper">
 
-         <!--burger-->
+         <!--burger image-->
          <img src="img/menu/crabsburger.png" alt="crabsburger">
 
          <!--popup meat and button for open popup-->
@@ -679,30 +594,30 @@
  <!--section perfection ingredients  end-->
 
  <!--section counter  start-->
-    <section class="counter">
+  <section class="counter">
 
-     <!-- clients -->
+     <!-- clients counter-->
      <section class="counter_wrapper">
          <img src="img/clients.png" alt="clients logo">
          <div class="counter_wrapper_counter" data-count="350">0</div>
          <p>Satisfied Clients</p>
      </section>
 
-     <!-- Burgers -->
+     <!-- Burgers made counter-->
      <section class="counter_wrapper">
          <img src="img/cheese-burger.png" alt="cheese-burger logo">
          <div class="counter_wrapper_counter" data-count="500">0</div>
          <p>Burgers made</p>
      </section>
 
-     <!-- Blog posts -->
+     <!-- Blog posts counter-->
      <section class="counter_wrapper">
          <img src="img/blog_posts.png" alt="blog_posts logo">
          <div class="counter_wrapper_counter" data-count="250">0</div>
          <p>Blog posts</p>
      </section>
 
-     <!-- Likes -->
+     <!-- Likes in social networks counter-->
      <section class="counter_wrapper">
          <img src="img/likes.png" alt="likes logo">
          <div class="counter_wrapper_counter" data-count="673">0</div>
@@ -712,18 +627,23 @@
  </section>
  <!--section counter  end-->
 
- <!--section social start-->
+ <!--section reviews in social networks  start-->
     <article class="social" id="social">
 
         <h3><span>about us</span> in social</h3>
+
         <h6>Share your moments and impressions with our cafe using hashtag <span>#Yummicafe</span></h6>
 
-        <!--wrapper social info-->
+        <!--wrapper reviews in social networks info-->
         <div class="social_wrapper" id="social_wrapper">
+
+            <!--instagram reviews-->
             <div class="social_wrapper_instagram">
                 <img src="img/social/social11.png" alt="cafe">
                 <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram "></i></a>
             </div>
+
+            <!--twitter reviews-->
             <div class="social_wrapper_twitter">
                 <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter "></i></a>
                 <div class="social_wrapper_twitter_info">
@@ -736,10 +656,14 @@
                     <p>25  likes </p>
                 </div>
             </div>
+
+            <!--instagram reviews-->
             <div class="social_wrapper_instagram">
                 <img src="img/social/social12.png" alt="cafe">
                 <a href="#"><i class="fab fa-instagram "></i></a>
             </div>
+
+            <!--twitter reviews-->
             <div class="social_wrapper_twitter">
                 <a href="#"><i class="fab fa-twitter "></i></a>
                 <div class="social_wrapper_twitter_info">
@@ -752,6 +676,8 @@
                     <p>18  likes </p>
                 </div>
             </div>
+
+            <!--twitter reviews-->
             <div class="social_wrapper_twitter">
                 <a href="#"><i class="fab fa-twitter "></i></a>
                 <div class="social_wrapper_twitter_info">
@@ -764,10 +690,14 @@
                     <p>34  likes </p>
                 </div>
             </div>
+
+            <!--instagram reviews-->
             <div class="social_wrapper_instagram">
                 <img src="img/social/social3.jpg" alt="cafe">
                 <a href="#"><i class="fab fa-instagram "></i></a>
             </div>
+
+            <!--twitter reviews-->
             <div class="social_wrapper_twitter">
                 <a href="#"><i class="fab fa-twitter "></i></a>
                 <div class="social_wrapper_twitter_info">
@@ -780,13 +710,16 @@
                     <p>10  likes </p>
                 </div>
             </div>
+
+            <!--instagram reviews-->
             <div class="social_wrapper_instagram">
                 <img src="img/social/social7.jpg" alt="cafe">
                 <a href="#"><i class="fab fa-instagram "></i></a>
             </div>
+
         </div>
 
-        <!--button for load more social reviews-->
+        <!--button for load more social reviews from reviews.html-->
         <div class="social_load_more">
             <input type="button" name="social_load_more" id="social_load_more" value="+">
         </div>
@@ -794,83 +727,36 @@
     </article>
  <!--section social  end-->
 
- <!--footer start-->
-    <footer class="footer">
-
-        <!--footer top contacts section-->
-      <div class="footer_top">
-
-          <!--map-->
-          <img class="footer_top_map" src="img/triangle2.png" alt="triangle">
-
-          <!--contacts-->
-          <div class="footer_top_contact">
-              <h4><span>our </span> address</h4>
-              <div class="footer_top_contact_form">
-                  <div class="footer_top_contact_form_address">
-                      <select>
-                          <option value="Sunset">28 Sunset Ave, New York</option>
-                          <option value="Ronald">15 Ronald Ave, New York</option>
-                          <option value="Haverford">20 Haverford Rd, New York</option>
-                      </select>
-                  </div>
-                  <div class="footer_top_contact_form_phone">
-                      <h6>Yummy  <span>cafe</span></h6>
-                      <div class="footer_top_contact_form_phone_description">
-                          <div class="footer_top_contact_form_phone_left">
-                              <i class="fas fa-phone-volume fa-2x"></i>
-                          </div>
-                          <div class="footer_top_contact_form_phone_right">
-                              <p>510-540-2059</p>
-                              <p>513-375-9485</p>
-                              <div class="footer_top_contact_form_phone_right_social">
-                                  <a href="https://www.facebook.com/" target="_blank"> <img src="img/social/facebook-white.png" alt="facebook"> </a>
-                                  <a href="https://plus.google.com" target="_blank"> <img src="img/social/google-plus-white.png" alt="google-plus"> </a>
-                                  <a href="https://twitter.com" target="_blank"> <img src="img/social/twitter-white.png" alt="twitter"> </a>
-                              </div>
-
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-      </div>
-
-        <!--footer down copyright section-->
-      <div class="footer_down">
-          <div class="footer_down_left">
-              <img src="img/copyright.png" alt="copyright">
-              <h5> velnychuk yura developer</h5>
-          </div>
-          <div class="footer_down_right">
-              <h5> yummy cafe @2018 </h5>
-          </div>
-      </div>
-
-  </footer>
-  <!--footer start-->
-
+<!--Footer section start-->
+<script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('footer');
+    document.body.appendChild(content.cloneNode(true));
+</script>
+<!--Footer section end-->
 
 <!--scripts-->
 
-     <!--Font-Awesome-->
-     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <!--Font-Awesome-->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-     <!--jquery-->
-     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!--jquery-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-     <!-- slick слайдер -->
-     <script  type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+        <!-- slick слайдер -->
+        <script  type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 
-     <!-- Magnific Popup core JS file -->
-     <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" type="text/javascript"></script>
+        <!-- Magnific Popup core JS file -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" type="text/javascript"></script>
 
-     <!-- js -->
-     <script  src="js/index.js"></script>
-     <script  src="js/video.js"></script>
-     <script  src="js/popup.js"></script>
+        <!-- js -->
+        <script  src="js/index.js"></script>
+        <script  src="js/video.js"></script>
+        <script  src="js/popup.js"></script>
+        <script  src="js/order.js"></script>
+        <script  src="js/counter-order.js"></script>
 
 </body>
+
 </html>

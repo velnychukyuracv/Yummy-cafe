@@ -1,258 +1,33 @@
 @import "constants";
 
-
 * {
   .standard_box;
 }
-#menu {
+
+#contacts {
 
   .standard;
 
-  /*header start*/
-  header {
-    background-image: url("../img/bg.png");
-    .header_top {
-      display: flex;
-      justify-content: space-between;
-      padding: 2% 5%;
-      z-index: 100;
-      width: 100%;
-      position: relative;
-      .header_top_logo{
-        width: 30%;
-      }
+/*header*/
+  @import "header";
 
-      nav {
-        width: 70%;
-        display: flex;
-        justify-content: flex-end;
-        .header_top_nav {
-          width: 40%;
-          display: flex;
-          justify-content: space-between;
-          list-style-type: none;
-          li {
-            position: relative;
-            cursor: pointer;
-            a {
-              font-family: @font-OpenSans;
-              font-size: @font-size-content;
-              font-weight: 700;
-              text-decoration: none;
-              color: @color-nav;
-              padding: 5px;
-              &:hover {
-                color: @color-content;
-              }
-            }
-          }
-        }
-        .header_top_counter_buy{
-          width: 15px;
-          height: 15px;
-          border-radius: 50%;
-          background-color: @color-button-active;
-          position: absolute;
-          display: none;
-          justify-content: center;
-          align-items: center;
-          font-family: @font-OpenSans;
-          font-size: 12px;
-          right:1%;
-          top: 1%;
-        }
-      }
-
-
-
+  header{
+    background-image: url("../img/bg-header.png");
+    .header_top{
+      padding: 2% 5% 1.74%;
     }
-
-
-
-    /*burger made start*/
-    .button_made_burgers{
-      display: flex;
-      align-items: center;
-      margin: 1%;
-      border: none;
-      outline: none;
-      background-color: @color-wine-menu;
-      position: fixed;
-      top: 80%;
-      z-index: 100;
-      cursor: pointer;
-      height: 60px;
-      border-radius: 30px;
-      opacity: 0.95;
-      span{
-        border-radius: 50%;
-        width: 60px;
-        height: 50px;
-        margin: 0 4%;
-        background-color: @color-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img{
-          width: 70%;
-        }
-      }
-      p{
-        color: @color-content;
-        font-family: @font-PassionOne;
-        font-size: @font-size-content;
-        font-weight: 500;
-        text-transform: uppercase;
-      }
-      &:hover{
-        background-color: @color-wine-menu;
-        opacity: 1;
-      }
-    }
-    /*burger made end*/
-  }
-  /*header end*/
-
-
-
-
-  /*footer  start*/
-  footer{
-    .footer_top_map{
-      width: 100%;
-    }
-    .footer_top{
-      background-image: url("../img/map.png");
-      padding-bottom: 10%;
-
-      .footer_top_contact{
-        margin: 5% 0 0 8%;
-        width: 18%;
-        display: flex;
-        flex-direction: column;
-        h4{
-          color: @color-yellow-title;
-          text-transform: uppercase;
-          font-family: @font-PassionOne;
-          font-size: @font-size-menu-name;
-          font-weight: 700;
-          margin-bottom: 5%;
-          span{
-            color: @color-wine;
-          }
-        }
-        .footer_top_contact_form{
-          .footer_top_contact_form_address{
-            width: 100%;
-            background-color: @color-yellow-text;
-            select{
-              background-color: @color-yellow-text;
-              padding: 3% 0;
-              outline: none;
-              border: none;
-              color: @color-content;
-              font-family: @font-OpenSans;
-              font-weight: 600;
-              font-size: @font-size-standard;
-              option{
-                width: 100%;
-                outline: none;
-                border: none;
-                color: @color-content;
-                font-family: @font-OpenSans;
-                font-weight: 600;
-                font-size: @font-size-content;
-              }
-            }
-          }
-          .footer_top_contact_form_phone{
-            width: 100%;
-            background-color: @color-wine;
-            padding: 5%;
-            h6{
-              color: @color-content;
-              font-family: @font-PassionOne;
-              font-weight: 600;
-              font-size: @font-size-menu-name - 5px;
-              border-bottom: 1px solid @color-yellow-text;
-              padding-bottom: 8%;
-              span{
-                color: @color-yellow-text;
-              }
-            }
-            .footer_top_contact_form_phone_description{
-              display: flex;
-              margin: 8% 0;
-              .footer_top_contact_form_phone_left{
-                .fa-phone-volume{
-                  color: @color-yellow-text;
-                }
-              }
-
-              .footer_top_contact_form_phone_right{
-                width: 100%;
-                margin-left: 5%;
-                p{
-                  font-family: @font-OpenSans;
-                  font-weight: 600;
-                  font-size: @font-size-content + 2px;
-                  &:nth-child(2){
-                    margin: 3% 0 5%;
-                  }
-                }
-                .footer_top_contact_form_phone_right_social{
-                  width: 70%;
-                  display: flex;
-                  a{
-                    width: 32%;
-                    img{
-                      width: 100%;
-                    }
-                    &:nth-child(2){
-                      margin: 0 5%;
-                    }
-                  }
-                }
-              }
-            }
-
-          }
-        }
-      }
-    }
-    .footer_down{
-      display: flex;
-      justify-content: space-between;
-      background-color: @color-wine;
-      padding: 1% 8%;
-      .footer_down_left{
-        width: 40%;
-        display: flex;
-        justify-content: flex-start;
-        h5{
-          margin-left: 3%;
-          text-transform: uppercase;
-          font-family: @font-OpenSans;
-          font-weight: 700;
-          font-size: @font-size-content;
-          opacity: 0.7;
-        }
-      }
-      .footer_down_right{
-        width: 20%;
-        display: flex;
-        justify-content: flex-end;
-        h5{
-          text-transform: uppercase;
-          font-family: @font-OpenSans;
-          font-weight: 700;
-          font-size: @font-size-content;
-          opacity: 0.7;
-        }
-      }
+    .header_body{
+      display: none;
     }
   }
-  /*footer  end*/
+
+/*main content*/
+  .contact_content{
+    padding-top: 5%;
+  }
+
+/*footer*/
+  @import "footer";
 
 }
 
