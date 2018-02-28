@@ -6,8 +6,7 @@ $(document).ready(function() {
     function plus(i){
         var $input = $('.shopping_order_goods_quantity_value_'+i);
 
-        console.log(+$input.val());
-        console.log( typeof +$input.val());
+
 
         $('.shopping_order_goods_quantity_plus_'+i).click(function () {
 
@@ -29,8 +28,6 @@ $(document).ready(function() {
     function minus(i){
         var $input = $('.shopping_order_goods_quantity_value_'+i);
 
-        console.log(+$input.val());
-        console.log( typeof +$input.val());
 
         $('.shopping_order_goods_quantity_minus_'+i).click(function () {
 

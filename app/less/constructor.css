@@ -614,6 +614,8 @@
   margin: 0 2%;
   border: 1px solid #FFA62A;
   border-radius: 6px;
+  height: 475px;
+  overflow: auto;
 }
 #constructor .constructor_wrapper .constructor_wrapper_section .constructor_wrapper_section_built .constructor_wrapper_section_built_description .constructor_wrapper_section_built_description_info .scroll-element .scroll-bar {
   margin: 0 20%;
@@ -621,6 +623,16 @@
   background-color: #FFA62A;
   height: 200px;
   border-radius: 6px;
+}
+#constructor .constructor_wrapper .constructor_wrapper_section .constructor_wrapper_section_built .constructor_wrapper_section_built_description .constructor_wrapper_section_built_description_info .scroll-element .jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* можно прижать к правому или левому краю */
+  width: 16px;
+  /* ширина полосы прокрутки */
+  height: 100%;
+  background: red;
 }
 #constructor .constructor_wrapper .constructor_wrapper_section .constructor_wrapper_section_built .constructor_wrapper_section_built_description .constructor_wrapper_section_built_description_info ul li {
   display: flex;

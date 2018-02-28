@@ -33,5 +33,11 @@ $(document).ready(function() {
     });
 
 
+    jQuery(function()
+    {
+        jQuery('.scroll-element ').jScrollPane();
+    });
+
+
 
 })
