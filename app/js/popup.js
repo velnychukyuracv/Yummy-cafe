@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     //close popup enter user
     $('.popup_enter').on('click', function(event){
-        if( $(event.target).is('.popup_enter_close') || $(event.target).is('.popup_enter') ) {
+        if( $(event.target).is('.popup_enter_close') || $(event.target).is('.popup_enter') || $(event.target).is('.registration') ) {
             event.preventDefault();
             $(this).removeClass('is-visible');
         }
@@ -97,5 +97,9 @@ $(document).ready(function(){
         }
 
     });
+
+
+
+
 
 });

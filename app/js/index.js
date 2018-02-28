@@ -11,6 +11,61 @@ $(document).ready(function() {
     });*/
 
 
+// scroll indicator
+   $(window).scroll(function() {
+       if ($(window).scrollTop() + window.innerHeight == $('#about').top) {
+           $('.scroll_main_circle').removeClass('active');
+           $('.circle_about').addClass('active');
+       } else  if ($(window).scrollTop() + window.innerHeight == $('.menu').offset().top) {
+           $('.scroll_main_circle').removeClass('active');
+           $('.circle_menu').addClass('active');
+       }
+    })
+
+    $('.circle_header ').click(function(){
+        $('html, body').animate({scrollTop:$('header').position().top}, 1500);
+        $('.scroll_main_circle').removeClass('active');
+        $('.circle_header').addClass('active');
+    });
+    $('.circle_about').click(function(){
+        $('html, body').animate({scrollTop:$('#about').position().top}, 1500);
+        $('.scroll_main_circle').removeClass('active');
+        $('.circle_about').addClass('active');
+    });
+    $('.circle_menu ').click(function(){
+        $('html, body').animate({scrollTop:$('#menu').position().top}, 1500);
+        $('.scroll_main_circle').removeClass('active');
+        $('.circle_menu').addClass('active');
+    });
+    $('.circle_banner').click(function(){
+        $('html, body').animate({scrollTop:$('#banner_post').position().top}, 1500);
+        $('.scroll_main_circle').removeClass('active');
+        $('.circle_banner').addClass('active');
+    });
+    $('.circle_perfection').click(function(){
+        $('html, body').animate({scrollTop:$('#perfection').position().top}, 1500);
+        $('.scroll_main_circle').removeClass('active');
+        $('.circle_perfection').addClass('active');
+    });
+    $('.circle_counter').click(function(){
+        $('html, body').animate({scrollTop:$('#counter').position().top}, 1500);
+        $('.scroll_main_circle').removeClass('active');
+        $('.circle_counter').addClass('active');
+    });
+    $('.circle_social').click(function(){
+        $('html, body').animate({scrollTop:$('#social').position().top}, 1500);
+        $('.scroll_main_circle').removeClass('active');
+        $('.circle_social').addClass('active');
+    });
+    $('.circle_footer ').click(function(){
+        $('html, body').animate({scrollTop:$('footer').position().top}, 1500);
+        $('.scroll_main_circle').removeClass('active');
+        $('.circle_footer').addClass('active');
+    });
+
+
+
+
 // slider slick
 
     //header slider at index.html(home page) and menu.html(menu page)
@@ -111,7 +166,7 @@ $(document).ready(function() {
                         countNum: countTo
                     },
 
-                    {
+                {
                         duration: 8000,
                         easing:'linear',
                         step: function() {
@@ -121,8 +176,6 @@ $(document).ready(function() {
                             $this.text(this.countNum);
                         }
                     });
-
-
 
             });
         }
@@ -134,6 +187,9 @@ $(document).ready(function() {
          $('#social_wrapper').load('../reviews.html');
          $('.social_load_more').css({ display: 'none'});
     });
+
+
+
 
 
 })

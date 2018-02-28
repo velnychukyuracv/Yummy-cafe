@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Yummy cafe</title>
+
+    <!--Favicon logo-->
+    <link rel="shortcut icon" href="img/favicon_icon.png" type="image/png">
+
+    <!-- slick слайдер -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!--Font-Google-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Passion+One:400,700" rel="stylesheet">
+
+    <!--Style-->
+    <link href="css/constructor.css" rel="stylesheet">
+
+    <link rel="import" href="header-footer.html">
+
+</head>
+
+<body id="constructor">
+
+<!--Header section start-->
+<script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('header');
+    document.body.appendChild(content.cloneNode(true));
+</script>
+<!--Header section end-->
+
+<!--constructor start-->
+<main class="constructor_wrapper">
+
+    <h3>collect <span>your</span> burger</h3>
+    <hr>
+    <div class="constructor_wrapper_section">
+        <div class="constructor_wrapper_section_built">
+            <div class="constructor_wrapper_section_built_ingredients">
+                <ul>
+                    <li data-target="bulka" class="constructor_wrapper_section_built_ingredients_block bulka">
+                        <img src="img/bulka/bun.png" alt="bun">
+                        <input type="button"  value="Bun" >
+
+                    </li>
+                    <li data-target="sauce" class="constructor_wrapper_section_built_ingredients_block sauce ">
+                        <img src="img/sauce/sauce.png" alt="sauce">
+                        <input type="button"  value="sauce" >
+                    </li>
+                    <li data-target="salad" class="constructor_wrapper_section_built_ingredients_block salad ">
+                        <img src="img/salad/salad.png" alt="salad">
+                        <input type="button"  value="salad" >
+                    </li>
+                    <li data-target="cutlet" class="constructor_wrapper_section_built_ingredients_block cutlet ">
+                        <img src="img/meat/steak.png" alt="steak">
+                        <input type="button"  value="cutlet" >
+                    </li>
+                    <li data-target="cheese" class="constructor_wrapper_section_built_ingredients_block cheese ">
+                        <img src="img/cheese/cheese.png" alt="cheese">
+                        <input type="button"  value="cheese" >
+                    </li>
+                    <li data-target="vegetables" class="constructor_wrapper_section_built_ingredients_block vegetables ">
+                        <img src="img/vegetables/tomato.png" alt="vegetables">
+                        <input type="button"  value="vegetables" >
+                    </li>
+                    <li data-target="other" class="constructor_wrapper_section_built_ingredients_block other">
+                        <img src="img/other/add.png" alt="add">
+                        <input type="button"  value="other" >
+                    </li>
+                </ul>
+            </div>
+            <div class="constructor_wrapper_section_built_description">
+                <div class="constructor_wrapper_section_built_description_info info_ingredients bulka">
+                    <div class="scroll-element scroll-y ">
+                        <div class="scroll-element_outer">
+                            <div class="scroll-bar" ></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="img/bulka/white-bulka.png" alt="bun">
+                            <div class="description_info_block white_bulka">
+                                <h6 >White bun</h6>
+                                <div class="description_info white_bulka_description_info">
+                                    <p>45.00g</p>
+                                    <p>+<span class="white_bulka_description_info_price">2</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add white_bulka_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/bulka/black-bulka.png" alt="bun">
+                            <div class="description_info_block black_bulka">
+                                <h6>Black bun</h6>
+                                <div class="description_info black_bulka_description_info">
+                                    <p>45.00g</p>
+                                    <p>+<span class="black_bulka_description_info_price">2</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add black_bulka_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/bulka/grenki.png" alt="grenki">
+                            <div class="description_info_block grenki">
+                                <h6>Grenki</h6>
+                                <div class="description_info grenki_description_info">
+                                    <p>45.00g</p>
+                                    <p>+<span class="grenki_description_info_price">1</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add grenki_add">
+                                +
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="constructor_wrapper_section_built_description_info info_ingredients sauce">
+                    <div class="scroll-element scroll-y ">
+                        <div class="scroll-element_outer">
+                            <div class="scroll-bar" ></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="img/sauce/Blue-Chies-sauce.png" alt="Blue Chies sauce">
+                            <div class="description_info_block blue_chies_sauce">
+                                <h6 >Blue Chies Sauce</h6>
+                                <div class="description_info blue_chies_sauce_description_info">
+                                    <p>10.00g</p>
+                                    <p>+<span class="blue_chies_sauce_description_info_price">1</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add blue_chies_sauce_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/sauce/Cheese-sauce.png" alt="Cheese sauce">
+                            <div class="description_info_block cheese_sauce">
+                                <h6>Cheese Sauce</h6>
+                                <div class="description_info cheese_sauce_description_info">
+                                    <p>10.00g</p>
+                                    <p>+<span class="cheese_sauce_description_info_price">1</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add cheese_sauce_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/sauce/Cherry-sauce.png" alt="Cherry sauce">
+                            <div class="description_info_block cherry_sauce">
+                                <h6>Cherry Sauce</h6>
+                                <div class="description_info cherry_sauce_description_info">
+                                    <p>10.00g</p>
+                                    <p>+<span class="cherry_sauce_description_info_price">1</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add cherry_sauce_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/sauce/Garlic-sauce.png" alt="Garlic sauce">
+                            <div class="description_info_block garlic_sauce">
+                                <h6>Garlic Sauce</h6>
+                                <div class="description_info garlic_sauce_description_info">
+                                    <p>10.00g</p>
+                                    <p>+<span class="garlic_sauce_description_info_price">1</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add garlic_sauce_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/sauce/Ketchup.png" alt="Ketchup">
+                            <div class="description_info_block ketchup_sauce">
+                                <h6>Ketchup </h6>
+                                <div class="description_info ketchup_sauce_description_info">
+                                    <p>10.00g</p>
+                                    <p>+<span class="ketchup_sauce_description_info_price">1</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add ketchup_sauce_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/sauce/Mushroom-sauce.png" alt="Mushroom sauce">
+                            <div class="description_info_block mushroom_sauce_sauce">
+                                <h6>Mushroom Sauce</h6>
+                                <div class="description_info mushroom_sauce_description_info">
+                                    <p>10.00g</p>
+                                    <p>+<span class="mushroom_sauce_description_info_price">1</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add mushroom_sauce_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/sauce/Mustard-Honey-sauce.png" alt="Mustard Honey sauce">
+                            <div class="description_info_block mustard_honey_sauce">
+                                <h6>Mustard Honey Sauce</h6>
+                                <div class="description_info mushroom_sauce_description_info">
+                                    <p>10.00g</p>
+                                    <p>+<span class="mushroom_sauce_description_info_price">1</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add mushroom_sauce_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/sauce/Salsa-is-Mexican-sauce.png" alt="Salsa-is-Mexican sauce">
+                            <div class="description_info_block salsa_sauce">
+                                <h6>Salsa Sauce</h6>
+                                <div class="description_info salsa_sauce_description_info">
+                                    <p>10.00g</p>
+                                    <p>+<span class="salsa_sauce_description_info_price">1</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add salsa_sauce_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/sauce/Spicy-sauce.png" alt="Spicy sauce">
+                            <div class="description_info_block spicy_sauce">
+                                <h6>Spicy Sauce</h6>
+                                <div class="description_info spicy_sauce_description_info">
+                                    <p>10.00g</p>
+                                    <p>+<span class="spicy_sauce_description_info_price">1</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add spicy_sauce_add">
+                                +
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="constructor_wrapper_section_built_description_info info_ingredients salad">
+                    <div class="scroll-element scroll-y ">
+                        <div class="scroll-element_outer">
+                            <div class="scroll-bar" ></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="img/salad/lettuce-iceberg.png" alt="lettuce iceberg">
+                            <div class="description_info_block iceberg_salad">
+                                <h6 >Lettuce Iceberg</h6>
+                                <div class="description_info iceberg_salad_description_info">
+                                    <p>15.00g</p>
+                                    <p>+<span class="iceberg_salad_description_info_price">2</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add iceberg_salad_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/salad/lettuce-Romen.png" alt="lettuce romen">
+                            <div class="description_info_block romen_salad">
+                                <h6 >Lettuce Romen</h6>
+                                <div class="description_info romen_salad_description_info">
+                                    <p>15.00g</p>
+                                    <p>+<span class="romen_salad_description_info_price">2</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add romen_salad_add">
+                                +
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="constructor_wrapper_section_built_description_info info_ingredients cutlet">
+                    <div class="scroll-element scroll-y ">
+                        <div class="scroll-element_outer">
+                            <div class="scroll-bar" ></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="img/meat/Chicken-Cutlet.png" alt="Chicken Cutlet">
+                            <div class="description_info_block chicken_cutlet">
+                                <h6 >Chicken cutlet</h6>
+                                <div class="description_info chicken_cutlet_description_info">
+                                    <p>160.00g</p>
+                                    <p>+<span class="chicken_cutlet_description_info_price">5</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add chicken_cutlet_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/meat/Cutlet-Beef.png" alt="Cutlet Beef">
+                            <div class="description_info_block beef_cutlet">
+                                <h6 >Cutlet Beef</h6>
+                                <div class="description_info beef_cutlet_description_info">
+                                    <p>160.00g</p>
+                                    <p>+<span class="beef_cutlet_description_info_price">5</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add beef_cutlet_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/meat/Cutlet-turkey.png" alt="Oatmeal Cutlet">
+                            <div class="description_info_block oatmeal_cutlet">
+                                <h6 >Oatmeal Cutlet</h6>
+                                <div class="description_info oatmeal_cutlet_description_info">
+                                    <p>160.00g</p>
+                                    <p>+<span class="oatmeal_cutlet_description_info_price">10</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add oatmeal_cutlet_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/meat/Pork-cutlet.png" alt="Pork Cutlet">
+                            <div class="description_info_block pork_cutlet">
+                                <h6>Pork Cutlet</h6>
+                                <div class="description_info pork_cutlet_description_info">
+                                    <p>160.00g</p>
+                                    <p>+<span class="pork_cutlet_description_info_price">5</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add pork_cutlet_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/meat/crab-cutlet.png" alt="Crab Cutlet">
+                            <div class="description_info_block crab_cutlet">
+                                <h6 >Crab Cutlet</h6>
+                                <div class="description_info crab_cutlet_description_info">
+                                    <p>160.00g</p>
+                                    <p>+<span class="crab_cutlet_description_info_price">8</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add crab_cutlet_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/meat/Bacon.png" alt="bacon">
+                            <div class="description_info_block bacon_cutlet">
+                                <h6 >Bacon</h6>
+                                <div class="description_info bacon_description_info">
+                                    <p>50.00g</p>
+                                    <p>+<span class="bacon_description_info_price">4</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add bacon_add">
+                                +
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="constructor_wrapper_section_built_description_info info_ingredients cheese">
+                    <div class="scroll-element scroll-y ">
+                        <div class="scroll-element_outer">
+                            <div class="scroll-bar" ></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="img/cheese/Cheese-Dorblu.png" alt="Cheese Dorblu">
+                            <div class="description_info_block cheese_dorblu">
+                                <h6 >Cheese Dorblu</h6>
+                                <div class="description_info cheese_dorblu_description_info">
+                                    <p>20.00g</p>
+                                    <p>+<span class="cheese_dorblu_description_info_price">3</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add cheese_dorblu_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/cheese/Cheddar-cheese.png" alt="Cheddar">
+                            <div class="description_info_block cheddar_cheese">
+                                <h6 >Cheddar cheese</h6>
+                                <div class="description_info cheddar_cheese_description_info">
+                                    <p>20.00g</p>
+                                    <p>+<span class="cheddar_cheese_description_info_price">3</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add cheddar_cheese_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/cheese/Cheese-mazdam.png" alt="Cheese mazdam">
+                            <div class="description_info_block cheese_mazdam">
+                                <h6 >Cheese Mazdam</h6>
+                                <div class="description_info cheese_mazdam_description_info">
+                                    <p>20.00g</p>
+                                    <p>+<span class="cheese_mazdam_description_info_price">3</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add cheese_mazdam_add">
+                                +
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="constructor_wrapper_section_built_description_info info_ingredients vegetables">
+                    <div class="scroll-element scroll-y ">
+                        <div class="scroll-element_outer">
+                            <div class="scroll-bar" ></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="img/vegetables/tomatoes.png" alt="tomatoes">
+                            <div class="description_info_block tomatoes_vegetables">
+                                <h6 >Tomato</h6>
+                                <div class="description_info tomato_description_info">
+                                    <p>30.00g</p>
+                                    <p>+<span class="tomato_description_info_price">2</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add tomato_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/vegetables/cucumbers-fresh.png" alt="cucumbers fresh">
+                            <div class="description_info_block cucumbers_fresh_vegetables">
+                                <h6 >Cucumbers Fresh</h6>
+                                <div class="description_info cucumbers_description_info">
+                                    <p>30.00g</p>
+                                    <p>+<span class="cucumbers_fresh_description_info_price">2</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add cucumbers_fresh_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/vegetables/cucumbers-pickled.png" alt="cucumbers pickled">
+                            <div class="description_info_block cucumbers_pickled_vegetables">
+                                <h6 >Cucumbers Pickled</h6>
+                                <div class="description_info cucumbers_pickled_description_info">
+                                    <p>30.00g</p>
+                                    <p>+<span class="cucumbers_pickled_description_info_price">2</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add cucumbers_pickled_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/vegetables/pepper.png" alt="pepper">
+                            <div class="description_info_block pepper_vegetables">
+                                <h6 >Pepper</h6>
+                                <div class="description_info pepper_description_info">
+                                    <p>20.00g</p>
+                                    <p>+<span class="pepper_description_info_price">3</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add pepper_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/vegetables/onion-caramelized.png" alt="onion caramelized">
+                            <div class="description_info_block onion_caramelized_vegetables">
+                                <h6 >Onion Caramelized</h6>
+                                <div class="description_info onion_caramelized_description_info">
+                                    <p>10.00g</p>
+                                    <p>+<span class="onion_caramelized_description_info_price">3</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add onion_caramelized_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/vegetables/onion-Fried.png" alt="Onion Fried">
+                            <div class="description_info_block onion_fried_vegetables">
+                                <h6 >Onion Fried</h6>
+                                <div class="description_info onion_fried_description_info">
+                                    <p>20.00g</p>
+                                    <p>+<span class="onion_fried_description_info_price">3</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add onion_fried_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/vegetables/onion-pickled.png" alt="onion pickled">
+                            <div class="description_info_block onion_pickled_vegetables">
+                                <h6 >Onion Pickled</h6>
+                                <div class="description_info onion_pickled_description_info">
+                                    <p>10.00g</p>
+                                    <p>+<span class="onion_pickled_description_info_price">2</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add onion_pickled_add">
+                                +
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="constructor_wrapper_section_built_description_info info_ingredients other">
+                    <div class="scroll-element scroll-y ">
+                        <div class="scroll-element_outer">
+                            <div class="scroll-bar" ></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="img/other/egg.png" alt="egg">
+                            <div class="description_info_block egg_other">
+                                <h6 >Egg</h6>
+                                <div class="description_info egg_description_info">
+                                    <p>50.00g</p>
+                                    <p>+<span class="egg_description_info_price">5</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add egg_add">
+                                +
+                            </button>
+                        </li>
+
+                        <li>
+                            <img src="img/other/pineapple.png" alt="pineapple">
+                            <div class="description_info_block pineapple_other">
+                                <h6 >Pineapple</h6>
+                                <div class="description_info pineapple_description_info">
+                                    <p>50.00g</p>
+                                    <p>+<span class="pineapple_description_info_price">5</span>$</p>
+                                </div>
+                            </div>
+                            <button class="add pineapple_add">
+                                +
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="constructor_wrapper_section_show">
+            <div class="constructor_wrapper_section_show_bulka_top">
+                <img src="img/bulka/white-bulka-top.png" alt="bun">
+            </div>
+            <div class="constructor_wrapper_section_show_ingredients">
+                <img src="img/vegetables/tomatoes.png" alt="tomatoes">
+                <img src="img/vegetables/cucumbers-fresh.png" alt="cucumbers">
+                <img src="img/cheese/Cheese-mazdam.png" alt="mazdam">
+                <img src="img/meat/Cutlet-Beef.png" alt="Cutlet">
+                <img src="img/salad/lettuce-Romen.png" alt="Romen">
+                <img src="img/sauce/Ketchup.png" alt="Ketchup">
+            </div>
+            <div class="constructor_wrapper_section_show_bulka_down">
+                <img src="img/bulka/white-bulka-down.png" alt="bun">
+            </div>
+
+        </div>
+        <div class="constructor_wrapper_section_total">
+            <div class="constructor_wrapper_section_total_ingredients">
+                <ul>
+                    <li>
+                        <img src="img/bulka/white-bulka.png" alt="bun">
+                        <div class="description_info_block white_bulka">
+                            <h6 >White bun</h6>
+                            <div class="description_info bulka_description_info">
+                                <p>45.00g</p>
+                                <p>+<span class="bulka_description_info_price">2</span>$</p>
+                            </div>
+                        </div>
+                        <button class="add white_bulka_add">
+                            +
+                        </button>
+                    </li>
+
+                    <li>
+                        <img src="img/bulka/black-bulka.png" alt="bun">
+                        <div class="description_info_block black_bulka">
+                            <h6>Black bun</h6>
+                            <div class="description_info bulka_description_info">
+                                <p>45.00g</p>
+                                <p>+<span class="bulka_description_info_price">2</span>$</p>
+                            </div>
+                        </div>
+                        <button class="add black_bulka_add">
+                            +
+                        </button>
+                    </li>
+
+                    <li>
+                        <img src="img/bulka/grenki.png" alt="grenki">
+                        <div class="description_info_block grenki">
+                            <h6>Grenki</h6>
+                            <div class="description_info grenki_description_info">
+                                <p>45.00g</p>
+                                <p>+<span class="bulka_description_info_price">1</span>$</p>
+                            </div>
+                        </div>
+                        <button class="add grenki_bulka_add">
+                            +
+                        </button>
+                    </li>
+                </ul>
+                <div class="total_scroll-element total_scroll-y ">
+                    <div class="total_scroll-element_outer">
+                        <div class="total_scroll-bar" ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="constructor_wrapper_section_total_name">
+                <p>Name your burger:</p>
+                <input type="text" name="burger" placeholder="Give your masterpiece a name" class="constructor_wrapper_section_total_name_info">
+            </div>
+            <div class="constructor_wrapper_section_total_price">
+                <p> total weight:  <span id="constructor_wrapper_section_total_weight"> 458g  </span></p>
+                <h5> total price:  <span id="constructor_wrapper_section_total_price_all"> 45 </span>$</h5>
+            </div>
+            <div class="constructor_wrapper_section_total_order">
+                <a href="#" class="constructor_wrapper_section_total_order_button"> order </a>
+                <a href="#" class="constructor_wrapper_section_total_order_back"> cancel </a>
+            </div>
+
+        </div>
+    </div>
+
+
+</main>
+<!--constructor end-->
+
+<!--Footer section start-->
+<script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('footer');
+    document.body.appendChild(content.cloneNode(true));
+</script>
+<!--Footer section end-->
+
+<!--scripts-->
+
+        <!--Font-Awesome-->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+        <!--jquery-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+        <!-- slick слайдер -->
+        <script  type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+        <!-- Magnific Popup core JS file -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" type="text/javascript"></script>
+
+        <!-- js -->
+        <script  src="js/index.js"></script>
+        <script  src="js/popup.js"></script>
+        <script  src="js/order.js"></script>
+        <script  src="js/counter-order.js"></script>
+        <script  src="js/constructor.js"></script>
+
+</body>
+</html>

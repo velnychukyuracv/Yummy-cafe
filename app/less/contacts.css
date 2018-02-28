@@ -51,7 +51,7 @@
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
-  padding: 2% 5%;
+  padding: 1.7% 5%;
   z-index: 100;
   width: 100%;
   position: fixed;
@@ -74,6 +74,8 @@
 #contacts header .header_top nav .header_top_nav li {
   position: relative;
   cursor: pointer;
+  width: 18%;
+  margin: 0 1%;
 }
 #contacts header .header_top nav .header_top_nav li a {
   font-family: Open Sans, sans-serif;
@@ -82,15 +84,19 @@
   text-decoration: none;
   color: #ffd79b;
   padding: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #contacts header .header_top nav .header_top_nav li a:hover {
   color: #fff;
 }
-#contacts header .header_top nav .header_top_nav li:nth-child(4) {
-  width: 10%;
+#contacts header .header_top nav .header_top_nav li:nth-child(3) {
+  width: 21%;
 }
-#contacts header .header_top nav .header_top_nav li:nth-child(4) a {
-  width: 100%;
+#contacts header .header_top nav .header_top_nav li:nth-child(5) {
+  width: 15%;
 }
 #contacts header .header_top nav .header_top_counter_buy {
   width: 15px;
@@ -103,7 +109,7 @@
   align-items: center;
   font-family: Open Sans, sans-serif;
   font-size: 12px;
-  right: 1%;
+  right: 15%;
   top: 1%;
 }
 #contacts header .header_body {
@@ -232,6 +238,7 @@
   height: 60px;
   border-radius: 30px;
   opacity: 0.95;
+  text-decoration: none;
 }
 #contacts header .button_made_burgers span {
   border-radius: 50%;
@@ -525,7 +532,160 @@
   display: none;
 }
 #contacts .contact_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 5%;
+}
+#contacts .contact_content h3 {
+  color: #5D4037;
+  text-transform: uppercase;
+  font-family: Passion One, cursive;
+  font-size: 80px;
+  font-weight: 700;
+  margin: 2% 0;
+}
+#contacts .contact_content hr {
+  width: 10%;
+  height: 5px;
+  background-color: #FFA62A;
+  border: none;
+}
+#contacts .contact_content .contact_content_wrapper {
+  display: flex;
+  margin: 2%;
+  padding: 1%;
+  justify-content: space-around;
+  /*form contact*/
+  /*image*/
+  /*schedule*/
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  /*contact*/
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form h4 {
+  color: #FFA726;
+  text-transform: uppercase;
+  font-family: Passion One, cursive;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form h4 span {
+  color: #5D4037;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block {
+  /*address information*/
+  /*phone information*/
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_address {
+  width: 100%;
+  background-color: #FFA62A;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_address select {
+  width: 100%;
+  background-color: #FFA62A;
+  padding: 3% 0;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_address select option {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_phone {
+  width: 100%;
+  background-color: #5D4037;
+  padding: 5%;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_phone h6 {
+  color: #fff;
+  font-family: Passion One, cursive;
+  font-weight: 600;
+  font-size: 25px;
+  border-bottom: 1px solid #FFA62A;
+  padding-bottom: 8%;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_phone h6 span {
+  color: #FFA62A;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_phone .contact_content_wrapper_form_block_phone_description {
+  display: flex;
+  margin: 8% 0;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_phone .contact_content_wrapper_form_block_phone_description .contact_content_wrapper_form_block_phone_left .fa-phone-volume {
+  color: #FFA62A;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_phone .contact_content_wrapper_form_block_phone_description .contact_content_wrapper_form_block_phone_right {
+  width: 100%;
+  margin-left: 5%;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_phone .contact_content_wrapper_form_block_phone_description .contact_content_wrapper_form_block_phone_right p {
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_phone .contact_content_wrapper_form_block_phone_description .contact_content_wrapper_form_block_phone_right p:nth-child(2) {
+  margin: 3% 0 5%;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_phone .contact_content_wrapper_form_block_phone_description .contact_content_wrapper_form_block_phone_right .contact_content_wrapper_form_block_phone_right_social {
+  width: 70%;
+  display: flex;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_phone .contact_content_wrapper_form_block_phone_description .contact_content_wrapper_form_block_phone_right .contact_content_wrapper_form_block_phone_right_social a {
+  width: 32%;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_phone .contact_content_wrapper_form_block_phone_description .contact_content_wrapper_form_block_phone_right .contact_content_wrapper_form_block_phone_right_social a img {
+  width: 100%;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_form .contact_content_wrapper_form_block .contact_content_wrapper_form_block_phone .contact_content_wrapper_form_block_phone_description .contact_content_wrapper_form_block_phone_right .contact_content_wrapper_form_block_phone_right_social a:nth-child(2) {
+  margin: 0 5%;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_img {
+  width: 10%;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_img img {
+  width: 100%;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_schedule {
+  width: 25%;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_schedule h4 {
+  color: #FFA726;
+  text-transform: uppercase;
+  font-family: Passion One, cursive;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_schedule h4 span {
+  color: #5D4037;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_schedule p {
+  color: #5D4037;
+  font-family: Open Sans, sans-serif;
+  font-size: 30px;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_schedule p:last-child {
+  font-size: 25px;
+}
+#contacts .contact_content .contact_content_wrapper .contact_content_wrapper_schedule h5 {
+  color: #FFA726;
+  font-family: Passion One, cursive;
+  font-size: 30px;
+  font-weight: 700;
 }
 #contacts footer {
   /*footer top information*/
@@ -665,4 +825,13 @@
   font-weight: 700;
   font-size: 18px;
   opacity: 0.7;
+}
+#contacts .footer_top {
+  height: 500px;
+}
+#contacts .footer_top .footer_top_contact h4 {
+  display: none;
+}
+#contacts .footer_top .footer_top_contact .footer_top_contact_form {
+  display: none;
 }

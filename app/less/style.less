@@ -7,10 +7,43 @@
 #home {
 
   .standard;
+  position: relative;
 
   /*header start*/
   @import "header";
   /*header end*/
+
+  /*scroll indicator start*/
+   .scroll{
+     position: fixed;
+     height:45%;
+     width: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     padding: 1%;
+     top:35%;
+     right: 2%;
+     z-index: 500;
+     .scroll_main_circle{
+      background-color: @color-wine;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+     }
+     .scroll_circle{
+       background-color: @color-wine;
+       width: 5px;
+       height: 5px;
+       border-radius: 50%;
+     }
+     .scroll_main_circle.active{
+       border: 2px solid @color-wine;
+       background-color: transparent;
+     }
+   }
+  /*scroll indicator start*/
 
   /*section about us start*/
   .about  {
