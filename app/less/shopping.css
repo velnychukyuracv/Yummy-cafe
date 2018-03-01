@@ -540,7 +540,6 @@
   align-items: center;
   padding-top: 5%;
   /*shopping basket order information*/
-  /*shopping basket pay information*/
   /*popup thank for order */
 }
 #shopping_basket .shopping h3 {
@@ -572,6 +571,7 @@
   flex-direction: column;
   width: 65%;
   margin: 1%;
+  /*shopping basket pay information*/
 }
 #shopping_basket .shopping .shopping_wrapper .shopping_order .shopping_order_title {
   width: 100%;
@@ -821,6 +821,49 @@
   text-transform: uppercase;
   text-align: center;
 }
+#shopping_basket .shopping .shopping_wrapper .shopping_order .shopping_pay {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 2% 2%;
+}
+#shopping_basket .shopping .shopping_wrapper .shopping_order .shopping_pay .shopping_pay_button {
+  width: 50%;
+  padding: 1%;
+  text-transform: uppercase;
+  color: #5D4037;
+  outline: none;
+  background-color: #fff;
+  font-family: Passion One, cursive;
+  font-size: 25px;
+  border: 2px solid #5D4037;
+  cursor: pointer;
+  margin: 0 1%;
+}
+#shopping_basket .shopping .shopping_wrapper .shopping_order .shopping_pay .shopping_pay_button:hover {
+  color: #FFA62A;
+  border: 2px solid #FFA62A;
+}
+#shopping_basket .shopping .shopping_wrapper .shopping_order .shopping_pay .shopping_pay_button_online {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-transform: uppercase;
+  color: #5D4037;
+  outline: none;
+  background-color: #fff;
+  font-family: Passion One, cursive;
+  font-size: 25px;
+  border: 2px solid #5D4037;
+  cursor: pointer;
+  margin: 0 1%;
+  text-decoration: none;
+}
+#shopping_basket .shopping .shopping_wrapper .shopping_order .shopping_pay .shopping_pay_button_online:hover {
+  color: #FFA62A;
+  border: 2px solid #FFA62A;
+}
 #shopping_basket .shopping .shopping_wrapper .shopping_delivery {
   display: flex;
   flex-direction: column;
@@ -856,6 +899,7 @@
   align-items: center;
   width: 50%;
   height: 100%;
+  transition: all 0.5s ease-in-out;
 }
 #shopping_basket .shopping .shopping_wrapper .shopping_delivery .shopping_delivery_tabs li.active {
   background-color: #fff;
@@ -897,49 +941,6 @@
 #shopping_basket .shopping .shopping_wrapper .shopping_delivery .shopping_delivery_tab_content li.active {
   display: flex;
   background-color: #fff;
-}
-#shopping_basket .shopping .shopping_pay {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  padding: 0 2% 2%;
-}
-#shopping_basket .shopping .shopping_pay .shopping_pay_button {
-  width: 30%;
-  padding: 1%;
-  text-transform: uppercase;
-  color: #5D4037;
-  outline: none;
-  background-color: #fff;
-  font-family: Passion One, cursive;
-  font-size: 25px;
-  border: 2px solid #5D4037;
-  cursor: pointer;
-  margin: 0 1%;
-}
-#shopping_basket .shopping .shopping_pay .shopping_pay_button:hover {
-  color: #FFA62A;
-  border: 2px solid #FFA62A;
-}
-#shopping_basket .shopping .shopping_pay .shopping_pay_button_online {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  text-transform: uppercase;
-  color: #5D4037;
-  outline: none;
-  background-color: #fff;
-  font-family: Passion One, cursive;
-  font-size: 25px;
-  border: 2px solid #5D4037;
-  cursor: pointer;
-  margin: 0 1%;
-  text-decoration: none;
-}
-#shopping_basket .shopping .shopping_pay .shopping_pay_button_online:hover {
-  color: #FFA62A;
-  border: 2px solid #FFA62A;
 }
 #shopping_basket .shopping .shopping_popup_thank {
   position: fixed;

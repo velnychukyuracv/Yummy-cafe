@@ -557,6 +557,7 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
+  transition: all 1s ease;
 }
 #home .scroll .scroll_circle {
   background-color: #5D4037;
@@ -592,6 +593,9 @@
   width: 40%;
   margin: 0 3%;
 }
+#home .about .about_wrapper .about_wrapper_left .about_wrapper_left_title {
+  width: 8%;
+}
 #home .about .about_wrapper .about_wrapper_left .about_wrapper_left_title .about_wrapper_left_title_square {
   background-color: #FFA62A;
   padding: 0 25%;
@@ -602,6 +606,7 @@
   font-weight: 700;
 }
 #home .about .about_wrapper .about_wrapper_left .about_wrapper_left_content {
+  width: 90%;
   padding-left: 1.5%;
 }
 #home .about .about_wrapper .about_wrapper_left .about_wrapper_left_content p {

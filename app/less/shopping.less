@@ -311,6 +311,51 @@
             }
           }
         }
+
+        /*shopping basket pay information*/
+        .shopping_pay{
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+          padding: 0 2% 2%;
+          .shopping_pay_button{
+            width: 50%;
+            padding: 1%;
+            text-transform: uppercase;
+            color:@color-wine;
+            outline: none;
+            background-color: @color-content;
+            font-family: @font-PassionOne;
+            font-size: @font-size-menu-name - 5px;
+            border: 2px solid @color-wine;
+            cursor: pointer;
+            margin: 0 1%;
+            &:hover{
+              color: @color-yellow-text;
+              border: 2px solid @color-yellow-text;
+            }
+          }
+          .shopping_pay_button_online{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            text-transform: uppercase;
+            color:@color-wine;
+            outline: none;
+            background-color: @color-content;
+            font-family: @font-PassionOne;
+            font-size: @font-size-menu-name - 5px;
+            border: 2px solid @color-wine;
+            cursor: pointer;
+            margin: 0 1%;
+            text-decoration: none;
+            &:hover{
+              color: @color-yellow-text;
+              border: 2px solid @color-yellow-text;
+            }
+          }
+        }
       }
 
       /*delivery information*/
@@ -347,6 +392,7 @@
             align-items: center;
             width: 50%;
             height: 100%;
+            transition: all 0.5s ease-in-out;
           }
           li.active{
             background-color: @color-content;
@@ -394,50 +440,7 @@
       }
     }
 
-    /*shopping basket pay information*/
-    .shopping_pay{
-      display: flex;
-      justify-content: flex-start;
-      width: 100%;
-      padding: 0 2% 2%;
-      .shopping_pay_button{
-        width: 30%;
-        padding: 1%;
-        text-transform: uppercase;
-        color:@color-wine;
-        outline: none;
-        background-color: @color-content;
-        font-family: @font-PassionOne;
-        font-size: @font-size-menu-name - 5px;
-        border: 2px solid @color-wine;
-        cursor: pointer;
-        margin: 0 1%;
-        &:hover{
-          color: @color-yellow-text;
-          border: 2px solid @color-yellow-text;
-        }
-      }
-      .shopping_pay_button_online{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30%;
-        text-transform: uppercase;
-        color:@color-wine;
-        outline: none;
-        background-color: @color-content;
-        font-family: @font-PassionOne;
-        font-size: @font-size-menu-name - 5px;
-        border: 2px solid @color-wine;
-        cursor: pointer;
-        margin: 0 1%;
-        text-decoration: none;
-        &:hover{
-          color: @color-yellow-text;
-          border: 2px solid @color-yellow-text;
-        }
-      }
-    }
+
 
     /*popup thank for order */
     .shopping_popup_thank{

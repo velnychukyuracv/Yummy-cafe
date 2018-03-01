@@ -222,6 +222,7 @@ $(document).ready(function() {
 
 //ajax load social content from reviews.html to index.html(home page)
     $('.social_load_more').click(function(){
+        e.preventDefault();
          $('#social_wrapper').load('../reviews.html');
          $('.social_load_more').css({ display: 'none'});
     });
