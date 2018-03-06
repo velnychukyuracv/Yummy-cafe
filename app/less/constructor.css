@@ -722,17 +722,37 @@
   overflow-y: scroll;
 }
 #constructor .constructor_wrapper .constructor_wrapper_section .constructor_wrapper_section_total .constructor_wrapper_section_total_ingredients .description_info_block {
-  width: 60%;
+  width: 80%;
   margin: 2%;
 }
 #constructor .constructor_wrapper .constructor_wrapper_section .constructor_wrapper_section_total .constructor_wrapper_section_total_ingredients .description_info_block h6 {
   color: #5D4037;
   font-family: Open Sans, sans-serif;
   font-size: 23px;
+  display: flex;
+  justify-content: space-between;
+}
+#constructor .constructor_wrapper .constructor_wrapper_section .constructor_wrapper_section_total .constructor_wrapper_section_total_ingredients .description_info_block h6 .total_delete_button {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  color: #fff;
+  background-color: #E64A19;
+  cursor: pointer;
+  text-align: center;
+  transform: rotate(45deg);
+}
+#constructor .constructor_wrapper .constructor_wrapper_section .constructor_wrapper_section_total .constructor_wrapper_section_total_ingredients .description_info_block h6 .total_delete_button:hover {
+  border: 2px solid #E64A19;
+  color: #E64A19;
+  background-color: transparent;
 }
 #constructor .constructor_wrapper .constructor_wrapper_section .constructor_wrapper_section_total .constructor_wrapper_section_total_ingredients .description_info_block .description_info_block_number {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #constructor .constructor_wrapper .constructor_wrapper_section .constructor_wrapper_section_total .constructor_wrapper_section_total_ingredients .description_info_block .description_info_block_number p {
   color: #757575;

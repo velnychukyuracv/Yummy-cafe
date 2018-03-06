@@ -249,10 +249,15 @@
          .menu_wrapper_burgers_slider_slide{
            display: flex;
            flex-direction: column;
-           margin: 4% 2%;
+           margin: 1% 2%;
            padding-top: 15%;
            outline: none;
            width: 20%;
+           height: 420px;
+           transform: scale(1,1);
+           transition-timing-function: ease-out;
+           transition-duration: 550ms;
+
 
            .menu_wrapper_burgers_slider_slide_picture{
              display: flex;
@@ -397,12 +402,13 @@
              }
            }
            &:hover{
+             will-change: transform;
              transform: scale(1.2,1.2);
              transition-timing-function: ease-out;
              transition-duration: 550ms;
-
              .menu_wrapper_burgers_slider_slide_likes{
                display: flex;
+
              }
              .menu_wrapper_burgers_slider_slide_order{
                display: flex;
@@ -428,6 +434,7 @@
            padding-top: 15%;
            outline: none;
            width: 20%;
+           height: 420px;
 
            transform: scale(1,1) ;
            transition-timing-function: ease-out;
@@ -608,7 +615,7 @@
            padding-top: 15%;
            outline: none;
            width: 20%;
-
+           height: 420px;
            transform: scale(1,1) ;
            transition-timing-function: ease-out;
            transition-duration: 550ms;

@@ -49,31 +49,30 @@ $(document).ready(function() {
         $('.white_bulka_down').hide();
     });
 
+            
 
 
 
-
-
-
-          /*  $( ".total_list_grenki").append('<input>');
-            $( ".constructor_wrapper_section_total_ingredients_list > li > input" ).addClass('delete_ingredient_button');
-            $(".delete_ingredient_button").attr("value","+");
-            $(".delete_ingredient_button").attr("type","button");
-            $(".delete_ingredient_button").attr("name","delete_ingredient");
-            $(".delete_ingredient_button").click(function() {
-                console.log('del');
-                $( ".total_list_grenki").remove();
-                $( ".constructor_wrapper_section_show_ingredients > .constructor.grenki").remove();*/
-
-
-
-    function consruct(i){
-        count=0
-        $('.add_'+i).click(function() {
+    function consruct(i) {
+        count = 0
+        $('.add_' + i).click(function () {
             count++
             console.log(count);
-            $(".constructor_wrapper_section_built_description_info > ul > li > .img_"+i).clone().appendTo(".constructor_wrapper_section_show_ingredients");
-            $( ".constructor_wrapper_section_built_description_info > ul > li > .info_"+i).clone().appendTo( ".constructor_wrapper_section_total_ingredients");
+            $(".constructor_wrapper_section_built_description_info > ul > li > .img_" + i).clone().appendTo(".constructor_wrapper_section_show_ingredients");
+            $(".constructor_wrapper_section_built_description_info > ul > li > .info_" + i).clone().appendTo(".constructor_wrapper_section_total_ingredients");
+
+            $(".constructor_wrapper_section_total_ingredients > .info_" + i + "> h6").append('<input>');
+            $(".constructor_wrapper_section_total_ingredients > .info_" + i + "> h6 > input").addClass('total_delete_button');
+            $(".constructor_wrapper_section_total_ingredients > .info_" + i + "> h6 > .total_delete_button").attr("value","+");
+            $(".constructor_wrapper_section_total_ingredients > .info_" + i + "> h6 > .total_delete_button").attr("type","button");
+            $(".constructor_wrapper_section_total_ingredients > .info_" + i + "> h6 > .total_delete_button").attr("name","delete_ingredient");
+
+
+            $(".total_delete_button").click(function () {
+                console.log('del');
+                $(".constructor_wrapper_section_show_ingredients > .img_" + i).remove();
+                $(".constructor_wrapper_section_total_ingredients > .info_" + i).remove();
+            });
         });
     }
 
@@ -107,6 +106,9 @@ $(document).ready(function() {
     consruct('pickled_onion');
     consruct('egg');
     consruct('pineapple');
+
+
+
 
 
 })

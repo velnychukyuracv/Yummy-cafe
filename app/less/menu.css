@@ -571,11 +571,11 @@
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_burgers_slider .menu_wrapper_burgers_slider_slide {
   display: flex;
   flex-direction: column;
-  margin: 4% 2%;
+  margin: 1% 2%;
   padding-top: 15%;
   outline: none;
   width: 20%;
-  height: 60%;
+  height: 380px;
   transform: scale(1, 1);
   transition-timing-function: ease-out;
   transition-duration: 550ms;

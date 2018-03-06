@@ -1010,10 +1010,20 @@
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 4% 2%;
+  margin: 1% 2%;
   padding-top: 15%;
   outline: none;
   width: 20%;
+  height: 420px;
+  -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 550ms;
+       -o-transition-duration: 550ms;
+          transition-duration: 550ms;
 }
 #home main .menu_wrapper .menu_wrapper_burgers_slider .menu_wrapper_burgers_slider_slide .menu_wrapper_burgers_slider_slide_picture {
   display: -webkit-box;
@@ -1213,6 +1223,7 @@
   opacity: 1;
 }
 #home main .menu_wrapper .menu_wrapper_burgers_slider .menu_wrapper_burgers_slider_slide:hover {
+  will-change: transform;
   -webkit-transform: scale(1.2, 1.2);
       -ms-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
@@ -1267,6 +1278,7 @@
   padding-top: 15%;
   outline: none;
   width: 20%;
+  height: 420px;
   -webkit-transform: scale(1, 1);
       -ms-transform: scale(1, 1);
           transform: scale(1, 1);
@@ -1529,6 +1541,7 @@
   padding-top: 15%;
   outline: none;
   width: 20%;
+  height: 420px;
   -webkit-transform: scale(1, 1);
       -ms-transform: scale(1, 1);
           transform: scale(1, 1);
