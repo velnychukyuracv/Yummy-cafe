@@ -17,9 +17,16 @@ $(document).ready(function() {
             $('.shopping_order_goods_total_value_'+i).text(newPrice.toFixed(2));
 
             if (+$input.val() > 0) {
-                console.log('false')
+                console.log('true')
                 $('.shopping_order_goods_quantity_minus_'+i).attr('disabled', false);
             }
+
+
+            var totalPrice1 = +$('.shopping_order_goods_total_value_1').text();
+            var totalPrice2 = +$('.shopping_order_goods_total_value_2').text();
+            var totalPrice3 = +$('.shopping_order_goods_total_value_3').text();
+            newPrice = totalPrice1 + totalPrice2 + totalPrice3;
+            $('.shopping_total_order').text(newPrice.toFixed(2));
 
             return false;
         });
@@ -41,20 +48,38 @@ $(document).ready(function() {
             $('.shopping_order_goods_total_value_'+i).text(newPrice.toFixed(2));
 
             if (+$input.val() === 0) {
-                console.log('true')
+                console.log('false')
                 $('.shopping_order_goods_quantity_minus_'+i).attr('disabled', true);
             }
+
+
+            var totalPrice1 = +$('.shopping_order_goods_total_value_1').text();
+            var totalPrice2 = +$('.shopping_order_goods_total_value_2').text();
+            var totalPrice3 = +$('.shopping_order_goods_total_value_3').text();
+            newPrice = totalPrice1 + totalPrice2 + totalPrice3;
+            $('.shopping_total_order').text(newPrice.toFixed(2));
 
             return false;
         });
     }
 
     /*work counter of shopping basket order goods quantity*/
-    for(var i=0; i<4;i++){
+    for(var i=1; i<4;i++){
         plus(i);
         minus(i);
 
+
+        var totalPrice1 = +$('.shopping_order_goods_total_value_1').text();
+        var totalPrice2 = +$('.shopping_order_goods_total_value_2').text();
+        var totalPrice3 = +$('.shopping_order_goods_total_value_3').text();
+        newPrice = totalPrice1 + totalPrice2 + totalPrice3;
+        $('.shopping_total_order').text(newPrice.toFixed(2));
+
+
     }
+
+
+
 
 
 //Buttons tabs  delivery at shopping.html (shopping basket)

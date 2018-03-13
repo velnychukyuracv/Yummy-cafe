@@ -161,7 +161,7 @@
                     <h5>Total order </h5>
                 </div>
                 <div class="shopping_order_total_price">
-                    <span class="shopping_total_order"> 12.99 </span>
+                    <span class="shopping_total_order"> </span>
                     <p> $ </p>
                 </div>
 
@@ -194,10 +194,15 @@
                 <li class="active" id="tab-1">
                      <img src="img/delivery_daily.png" alt="delivery">
                      <h6> Enter the delivery address : </h6>
-                     <input type="text" name="name" id="name" placeholder="Enter your name">
-                     <input type="text" name="address" id="address" placeholder="Enter your address">
-                     <input type="tel" name="phone" id="number_phone" placeholder="Enter your phone">
+                    <form action="#">
+                        <input type="text" name="nameForDelivery" id="nameForDelivery" placeholder="Enter your name">
+                        <input type="text" name="address" id="address" placeholder="Enter your address">
+                        <input type="tel" name="phone" id="number_phone" placeholder="Enter your phone">
+                    </form>
+
                      <p>The cost of delivery of 5$ for the order amount is less than 80$. For the amount of the order 500$ delivery is free of charge.  <br><br>DELIVERY OPERATION<br>10:00-00:30 </p>
+
+                    <button class="delivery_button"> Order delivery </button>
                 </li>
 
                 <!--self-transport information-->

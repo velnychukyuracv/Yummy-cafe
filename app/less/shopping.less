@@ -408,7 +408,7 @@
             display: none;
             flex-direction: column;
             align-items: center;
-            padding: 3% 2%;
+            padding: 3% 2% 1%;
             img{
               width: 70%;
             }
@@ -419,17 +419,39 @@
               font-weight: 600;
               color: @color-wine;
             }
-            input{
-              margin: 2%;
+            form{
               width: 100%;
-              padding: 3%;
-              border: 2px solid @color-wine;
+              padding: 0 1%;
+              input{
+                margin: 2% 0;
+                width: 100%;
+                padding: 3%;
+                border: 2px solid @color-wine;
+              }
             }
+
             p{
               font-family: @font-OpenSans;
               font-size: @font-size-standard;
               color: @color-wine;
               margin-top: 3%;
+            }
+            .delivery_button{
+              cursor: pointer;
+              width: 90%;
+              padding: 1%;
+              margin: 14% 0 4%;
+              text-transform: uppercase;
+              color:@color-wine;
+              outline: none;
+              background-color: @color-content;
+              font-family: @font-PassionOne;
+              font-size: @font-size-menu-name - 6px;
+              border: 2px solid @color-wine;
+              &:hover{
+                color: @color-yellow-text;
+                border: 2px solid @color-yellow-text;
+              }
             }
           }
           li.active{
