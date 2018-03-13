@@ -239,7 +239,7 @@
   list-style: none;
   text-align: center;
   bottom: 25%;
-  z-index: 5;
+  z-index: 20;
 }
 #constructor header .header_body .sl .slick-dots li {
   margin: 5px;

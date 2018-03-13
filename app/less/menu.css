@@ -203,7 +203,7 @@
   list-style: none;
   text-align: center;
   bottom: 25%;
-  z-index: 5;
+  z-index: 20;
 }
 #menu header .header_body .sl .slick-dots li {
   margin: 5px;
@@ -564,17 +564,17 @@
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_burgers_slider {
   display: none;
   width: 100%;
-  padding: 0 3% ;
+  padding: 1% 2% ;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_burgers_slider .menu_wrapper_burgers_slider_slide {
   display: flex;
   flex-direction: column;
-  margin: 1% 2%;
+  margin: 1%;
   padding-top: 15%;
   outline: none;
-  width: 20%;
+  width: 22%;
   height: 380px;
   transform: scale(1, 1);
   transition-timing-function: ease-out;
@@ -606,7 +606,7 @@
   padding: 5% 0 5% 3%;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_burgers_slider .menu_wrapper_burgers_slider_slide .menu_wrapper_burgers_slider_slide_title .menu_wrapper_burgers_slider_slide_title_name h6 {
-  color: #6D4C41;
+  color: #6b4a3f;
   font-family: Open Sans, sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -615,7 +615,7 @@
   color: #5D4037;
   font-family: Passion One, cursive;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_burgers_slider .menu_wrapper_burgers_slider_slide .menu_wrapper_burgers_slider_slide_title .menu_wrapper_burgers_slider_slide_title_price {
@@ -631,7 +631,7 @@
   color: #FFA62A;
   font-family: Passion One, cursive;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 24px;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_burgers_slider .menu_wrapper_burgers_slider_slide .menu_wrapper_burgers_slider_slide_description {
   display: flex;
@@ -723,6 +723,7 @@
   opacity: 1;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_burgers_slider .menu_wrapper_burgers_slider_slide:hover {
+  cursor: pointer;
   transform: scale(1.2, 1.2);
   transition-timing-function: ease-out;
   transition-duration: 550ms;
@@ -790,7 +791,7 @@
   color: #5D4037;
   font-family: Passion One, cursive;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 28px;
   text-transform: uppercase;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_potato_slider .menu_wrapper_potato_slider_slide .menu_wrapper_potato_slider_slide_title .menu_wrapper_potato_slider_slide_title_price {
@@ -822,7 +823,7 @@
   color: #6D4C41;
   font-family: Open Sans, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_potato_slider .menu_wrapper_potato_slider_slide .menu_wrapper_potato_slider_slide_description .menu_wrapper_potato_slider_slide_description_gram {
   display: flex;
@@ -898,6 +899,7 @@
   opacity: 1;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_potato_slider .menu_wrapper_potato_slider_slide:hover {
+  cursor: pointer;
   transform: scale(1.2, 1.2);
   transition-timing-function: ease-out;
   transition-duration: 550ms;
@@ -909,23 +911,38 @@
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_potato_slider .menu_wrapper_potato_slider_slide:hover .menu_wrapper_potato_slider_slide_order {
   display: flex;
 }
+#menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_potato_slider .menu_wrapper_potato_slider_slide:last-child {
+  width: 25%;
+}
+#menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_potato_slider .menu_wrapper_potato_slider_slide:last-child .menu_wrapper_potato_slider_slide_picture {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_potato_slider .menu_wrapper_potato_slider_slide:last-child .menu_wrapper_potato_slider_slide_picture img {
+  width: 70%;
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+}
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_potato_slider.active {
   display: flex;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_drinks_slider {
   display: none;
   width: 100%;
-  padding: 0 3%;
+  padding: 1% 2% ;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_drinks_slider .menu_wrapper_drinks_slider_slide {
   display: flex;
   flex-direction: column;
-  margin: 4% 2%;
+  margin: 2% 2%;
   padding-top: 15%;
   outline: none;
   width: 20%;
+  height: 380px;
   transform: scale(1, 1);
   transition-timing-function: ease-out;
   transition-duration: 550ms;
@@ -934,7 +951,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_drinks_slider .menu_wrapper_drinks_slider_slide .menu_wrapper_drinks_slider_slide_picture img {
   width: 100%;
@@ -966,7 +982,7 @@
   color: #5D4037;
   font-family: Passion One, cursive;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 22px;
   text-transform: uppercase;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_drinks_slider .menu_wrapper_drinks_slider_slide .menu_wrapper_drinks_slider_slide_title .menu_wrapper_drinks_slider_slide_title_price {
@@ -982,17 +998,17 @@
   color: #FFA62A;
   font-family: Passion One, cursive;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 22px;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_drinks_slider .menu_wrapper_drinks_slider_slide .menu_wrapper_drinks_slider_slide_likes {
   display: flex;
   background-color: #F5F5F5;
-  padding: 2% 0 1%;
+  padding: 2% 0;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_drinks_slider .menu_wrapper_drinks_slider_slide .menu_wrapper_drinks_slider_slide_likes .menu_wrapper_drinks_slider_slide_likes_like {
   display: flex;
   width: 70%;
-  padding: 4% 0 3% 3%;
+  padding: 2% 0 2% 3%;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_drinks_slider .menu_wrapper_drinks_slider_slide .menu_wrapper_drinks_slider_slide_likes .menu_wrapper_drinks_slider_slide_likes_like .fa-heart {
   color: #6D4C41;
@@ -1014,13 +1030,13 @@
   display: flex;
   justify-content: flex-end;
   width: 30%;
-  padding: 4% 3%;
+  padding: 2%;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_drinks_slider .menu_wrapper_drinks_slider_slide .menu_wrapper_drinks_slider_slide_likes .menu_wrapper_drinks_slider_slide_description_ml h6 {
   color: #6D4C41;
   font-family: Open Sans, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   opacity: 0.7;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_drinks_slider .menu_wrapper_drinks_slider_slide .menu_wrapper_drinks_slider_slide_order {
@@ -1046,6 +1062,7 @@
   opacity: 1;
 }
 #menu main .menu_wrapper .menu_wrapper_block .menu_wrapper_drinks_slider .menu_wrapper_drinks_slider_slide:hover {
+  cursor: pointer;
   transform: scale(1.2, 1.2);
   transition-timing-function: ease-out;
   transition-duration: 550ms;

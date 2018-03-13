@@ -1,52 +1,6 @@
 
 // scroll indicator at index.html (home page)
 
-var topHeader = $('header').offsetTop;
-console.log(topHeader);
-var    topAbout = $('#about').offsetTop;
-console.log(topAbout);
-var    topMenu = $('#menu').offsetTop;
-console.log(topMenu);
-var    topBanner = $('#banner_post').offsetTop;
-console.log(topBanner);
-var    topPerfection = $('#perfection').offsetTop;
-console.log(topPerfection);
-var    topCounter = $('#counter').offsetTop;
-console.log(topCounter);
-var    topSocial = $('#social').offsetTop;
-console.log(topSocial);
-var   topFooter = $('footer').offsetTop;
-console.log(topFooter);
-
-document.body.onscroll = function () {
-    var scr =  window.pageYOffset || document.documentElement.scrollTop;
-    console.log(scr);
-    if (scr >= topHeader) {
-        $('.scroll_main_circle').removeClass('active');
-        $('.circle_header').addClass('active');
-    } else if (scr >= topAbout) {
-        $('.scroll_main_circle').removeClass('active');
-        $('.circle_about').addClass('active');
-    } else if (scr >= topMenu) {
-        $('.scroll_main_circle').removeClass('active');
-        $('.circle_menu').addClass('active');
-    } else if (scr >= topBanner) {
-        $('.scroll_main_circle').removeClass('active');
-        $('.circle_banner').addClass('active');
-    }else if (scr >= topPerfection) {
-        $('.scroll_main_circle').removeClass('active');
-        $('.circle_perfection').addClass('active');
-    } else if (scr >= topCounter) {
-        $('.scroll_main_circle').removeClass('active');
-        $('.circle_counter').addClass('active');
-    } else if (scr >= topSocial) {
-        $('.scroll_main_circle').removeClass('active');
-        $('.circle_social').addClass('active');
-    }else  if (scr >= topFooter){
-        $('.scroll_main_circle').removeClass('active');
-        $('.circle_footer').addClass('active');
-    }
-};
 
 $('.circle_header ').click(function(){
     $('html, body').animate({scrollTop:$('header').position().top}, 1500);
@@ -88,3 +42,53 @@ $('.circle_footer ').click(function(){
     $('.scroll_main_circle').removeClass('active');
     $('.circle_footer').addClass('active');
 });
+
+
+// Cache selectors
+var lastId,
+    topMenu = $("#scroll"),
+    topMenuHeight = topMenu.outerHeight()+15,
+// All list items
+    menuItems = topMenu.find("a"),
+// Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+    });
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+    var href = $(this).attr("href"),
+        offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+    $('html, body').stop().animate({
+        scrollTop: offsetTop
+    }, 300);
+    e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+    // Get container scroll position
+    var fromTop = $(this).scrollTop()+topMenuHeight;
+
+    // Get id of current scroll item
+    var cur = scrollItems.map(function(){
+        if ($(this).offset().top < fromTop)
+            return this;
+    });
+    // Get the id of the current element
+    cur = cur[cur.length-1];
+    var id = cur && cur.length ? cur[0].id : "";
+
+    if (lastId !== id) {
+        lastId = id;
+        // Set/remove active class
+        menuItems
+            .parent().removeClass("active")
+            .end().filter("[href='#"+id+"']").parent().addClass("active");
+    }
+});
+
+
+

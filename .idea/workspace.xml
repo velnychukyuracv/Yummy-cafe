@@ -2,20 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="300a9eb1-d8b4-4f50-910f-f3a3ff2b011c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/js/scroll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/img/menu/ColaLight.png" afterPath="$PROJECT_DIR$/app/img/menu/ColaLight.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/constructor.css" afterPath="$PROJECT_DIR$/app/css/constructor.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/contacts.css" afterPath="$PROJECT_DIR$/app/css/contacts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/header.css" afterPath="$PROJECT_DIR$/app/css/header.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/menu.css" afterPath="$PROJECT_DIR$/app/css/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/shopping.css" afterPath="$PROJECT_DIR$/app/css/shopping.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/style.css" afterPath="$PROJECT_DIR$/app/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/constructor.js" afterPath="$PROJECT_DIR$/app/js/constructor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/index.js" afterPath="$PROJECT_DIR$/app/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/order.js" afterPath="$PROJECT_DIR$/app/js/order.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/scroll.js" afterPath="$PROJECT_DIR$/app/js/scroll.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/constructor.css" afterPath="$PROJECT_DIR$/app/less/constructor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/constructor.less" afterPath="$PROJECT_DIR$/app/less/constructor.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/contacts.css" afterPath="$PROJECT_DIR$/app/less/contacts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/header.css" afterPath="$PROJECT_DIR$/app/less/header.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/header.less" afterPath="$PROJECT_DIR$/app/less/header.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/menu.css" afterPath="$PROJECT_DIR$/app/less/menu.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/menu.less" afterPath="$PROJECT_DIR$/app/less/menu.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/shopping.css" afterPath="$PROJECT_DIR$/app/less/shopping.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/style.css" afterPath="$PROJECT_DIR$/app/less/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/less/style.less" afterPath="$PROJECT_DIR$/app/less/style.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/menu.html" afterPath="$PROJECT_DIR$/app/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shopping.html" afterPath="$PROJECT_DIR$/app/shopping.html" />
     </list>
     <ignored path="Yummy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,72 +43,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/index.js">
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.615385">
+              <caret line="491" column="64" selection-start-line="491" selection-start-column="64" selection-end-line="491" selection-end-column="64" />
               <folding>
-                <element signature="e#627#784#0" expanded="false" />
-                <element signature="e#835#988#0" expanded="false" />
-                <element signature="e#1078#1128#0" expanded="false" />
-                <element signature="e#1373#1981#0" expanded="false" />
-                <element signature="e#2120#2320#0" expanded="false" />
-                <element signature="e#2405#2651#0" expanded="false" />
-                <element signature="e#2734#2936#0" expanded="false" />
-                <element signature="e#3021#3267#0" expanded="false" />
-                <element signature="e#3395#4137#0" expanded="false" />
-                <element signature="e#4255#4374#0" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#5;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#6;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#7;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#8;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#9;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#10;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#11;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#13;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#14;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#11;n#div#2;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
+      <file leaf-file-name="menu.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/less/menu.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.0">
-              <caret line="778" column="34" selection-start-line="778" selection-start-column="34" selection-end-line="778" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.24538745">
+              <caret line="558" column="32" selection-start-line="558" selection-start-column="32" selection-end-line="558" selection-end-column="32" />
+              <folding>
+                <element signature="e#873#7328#0" expanded="false" />
+                <element signature="e#1476#1913#0" expanded="false" />
+                <element signature="e#1968#3491#0" expanded="false" />
+                <element signature="e#2062#2851#0" expanded="false" />
+                <element signature="e#3552#4605#0" expanded="false" />
+                <element signature="e#4660#6000#0" expanded="false" />
+                <element signature="e#6055#6835#0" expanded="false" />
+                <element signature="e#7375#7415#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/less/constants.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="27" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/less/style.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3321033">
-              <caret line="259" column="11" selection-start-line="259" selection-start-column="11" selection-end-line="259" selection-end-column="11" />
-              <folding>
-                <element signature="e#187#842#0" expanded="false" />
-                <element signature="e#912#4579#0" expanded="false" />
-                <element signature="e#4717#4966#0" expanded="false" />
-                <element signature="e#5036#5751#0" expanded="false" />
-                <element signature="e#6352#6752#0" expanded="false" />
-                <element signature="e#6804#8201#0" expanded="false" />
-                <element signature="e#8259#9228#0" expanded="false" />
-                <element signature="e#9280#10509#0" expanded="false" />
-                <element signature="e#10105#10496#0" expanded="false" />
-                <element signature="e#10561#11278#0" expanded="false" />
-                <element signature="e#11521#11568#0" expanded="false" />
-                <element signature="e#11745#11779#0" expanded="false" />
-                <element signature="e#11815#17680#0" expanded="false" />
-                <element signature="e#17723#17757#0" expanded="false" />
-                <element signature="e#17793#22603#0" expanded="false" />
-                <element signature="e#17974#22594#0" expanded="false" />
-                <element signature="e#22646#22680#0" expanded="false" />
-                <element signature="e#22707#23436#0" expanded="false" />
-                <element signature="e#23504#25610#0" expanded="false" />
-                <element signature="e#25657#25809#0" expanded="false" />
-                <element signature="e#25841#25868#0" expanded="false" />
-                <element signature="e#25903#25928#0" expanded="false" />
-                <element signature="e#25965#26117#0" expanded="false" />
-                <element signature="e#26164#26189#0" expanded="false" />
-                <element signature="e#26239#26264#0" expanded="false" />
-                <element signature="e#26345#31797#0" expanded="false" />
-                <element signature="e#31880#32614#0" expanded="false" />
-                <element signature="e#32681#36147#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -135,26 +129,26 @@
         <option value="$PROJECT_DIR$/app/js/counter.js" />
         <option value="$PROJECT_DIR$/app/js/plus-minus.js" />
         <option value="$PROJECT_DIR$/app/js/video.js" />
-        <option value="$PROJECT_DIR$/app/menu.html" />
         <option value="$PROJECT_DIR$/app/js/test.txt" />
         <option value="$PROJECT_DIR$/app/js/popup.js" />
         <option value="$PROJECT_DIR$/app/less/footer.less" />
         <option value="$PROJECT_DIR$/app/contacts.html" />
         <option value="$PROJECT_DIR$/app/less/contacts.less" />
         <option value="$PROJECT_DIR$/app/header-footer.html" />
-        <option value="$PROJECT_DIR$/app/less/header.less" />
-        <option value="$PROJECT_DIR$/app/js/order.js" />
-        <option value="$PROJECT_DIR$/app/shopping.html" />
         <option value="$PROJECT_DIR$/app/less/shopping.less" />
         <option value="$PROJECT_DIR$/app/ingredients.json" />
         <option value="$PROJECT_DIR$/app/constructor.html" />
         <option value="$PROJECT_DIR$/app/less/constructor.less" />
-        <option value="$PROJECT_DIR$/app/js/constructor.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/js/scroll.js" />
-        <option value="$PROJECT_DIR$/app/less/menu.less" />
         <option value="$PROJECT_DIR$/app/js/index.js" />
         <option value="$PROJECT_DIR$/app/less/style.less" />
+        <option value="$PROJECT_DIR$/app/less/header.less" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/js/scroll.js" />
+        <option value="$PROJECT_DIR$/app/shopping.html" />
+        <option value="$PROJECT_DIR$/app/js/constructor.js" />
+        <option value="$PROJECT_DIR$/app/js/order.js" />
+        <option value="$PROJECT_DIR$/app/menu.html" />
+        <option value="$PROJECT_DIR$/app/less/menu.less" />
       </list>
     </option>
   </component>
@@ -247,8 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,6 +311,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -326,7 +320,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="list.type.of.created.stylesheet" value="Less" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Main Academy Front-End JS/random" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Main Academy Front-End JS/scroll" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
@@ -412,12 +406,12 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2061012" sideWeight="0.49832216" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2061012" sideWeight="0.5016779" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2061012" sideWeight="0.54697984" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2061012" sideWeight="0.45302013" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31932774" sideWeight="0.50595236" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30704698" sideWeight="0.4940476" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30536914" sideWeight="0.4940476" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26845637" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -463,7 +457,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -678,24 +672,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/reviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.06284658">
-          <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/less/footer.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.692307">
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="116" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/less/header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62846583">
-          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -713,31 +693,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24399261">
-          <caret line="53" column="70" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/header-footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18853974">
-          <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/counter-order.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.059964728">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/shopping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7171904">
-          <caret line="170" column="36" selection-start-line="170" selection-start-column="36" selection-end-line="170" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -755,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/less/constants.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2195572">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/less/constructor.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -769,106 +721,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/constructor.html">
+    <entry file="file://$PROJECT_DIR$/app/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.30627307">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/order.js">
+    <entry file="file://$PROJECT_DIR$/app/less/header.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.031365313">
+          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/constructor.js">
+    <entry file="file://$PROJECT_DIR$/app/header-footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2693662">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/less/menu.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15867159">
-          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-          <folding>
-            <element signature="e#237#520#0" expanded="false" />
-            <element signature="e#529#646#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/scroll.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029929578">
-          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-          <folding />
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.0">
-          <caret line="778" column="34" selection-start-line="778" selection-start-column="34" selection-end-line="778" selection-end-column="34" />
-          <folding />
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/scroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9188712">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.029982364">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/constructor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="601" column="77" selection-start-line="601" selection-start-column="77" selection-end-line="601" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/constructor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74823946">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
           <folding>
-            <element signature="e#627#784#0" expanded="false" />
-            <element signature="e#835#988#0" expanded="false" />
-            <element signature="e#1078#1128#0" expanded="false" />
-            <element signature="e#1373#1981#0" expanded="false" />
-            <element signature="e#2120#2320#0" expanded="false" />
-            <element signature="e#2405#2651#0" expanded="false" />
-            <element signature="e#2734#2936#0" expanded="false" />
-            <element signature="e#3021#3267#0" expanded="false" />
-            <element signature="e#3395#4137#0" expanded="false" />
-            <element signature="e#4255#4374#0" expanded="false" />
+            <element signature="e#1897#2164#0" expanded="false" />
+            <element signature="e#2317#2415#0" expanded="false" />
+            <element signature="e#2520#2680#0" expanded="false" />
+            <element signature="e#2802#2916#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/less/style.less">
+    <entry file="file://$PROJECT_DIR$/app/shopping.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3321033">
-          <caret line="259" column="11" selection-start-line="259" selection-start-column="11" selection-end-line="259" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.50553507">
+          <caret line="163" column="33" selection-start-line="163" selection-start-column="33" selection-end-line="163" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reviews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031365313">
+          <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.615385">
+          <caret line="491" column="64" selection-start-line="491" selection-start-column="64" selection-end-line="491" selection-end-column="64" />
           <folding>
-            <element signature="e#187#842#0" expanded="false" />
-            <element signature="e#912#4579#0" expanded="false" />
-            <element signature="e#4717#4966#0" expanded="false" />
-            <element signature="e#5036#5751#0" expanded="false" />
-            <element signature="e#6352#6752#0" expanded="false" />
-            <element signature="e#6804#8201#0" expanded="false" />
-            <element signature="e#8259#9228#0" expanded="false" />
-            <element signature="e#9280#10509#0" expanded="false" />
-            <element signature="e#10105#10496#0" expanded="false" />
-            <element signature="e#10561#11278#0" expanded="false" />
-            <element signature="e#11521#11568#0" expanded="false" />
-            <element signature="e#11745#11779#0" expanded="false" />
-            <element signature="e#11815#17680#0" expanded="false" />
-            <element signature="e#17723#17757#0" expanded="false" />
-            <element signature="e#17793#22603#0" expanded="false" />
-            <element signature="e#17974#22594#0" expanded="false" />
-            <element signature="e#22646#22680#0" expanded="false" />
-            <element signature="e#22707#23436#0" expanded="false" />
-            <element signature="e#23504#25610#0" expanded="false" />
-            <element signature="e#25657#25809#0" expanded="false" />
-            <element signature="e#25841#25868#0" expanded="false" />
-            <element signature="e#25903#25928#0" expanded="false" />
-            <element signature="e#25965#26117#0" expanded="false" />
-            <element signature="e#26164#26189#0" expanded="false" />
-            <element signature="e#26239#26264#0" expanded="false" />
-            <element signature="e#26345#31797#0" expanded="false" />
-            <element signature="e#31880#32614#0" expanded="false" />
-            <element signature="e#32681#36147#0" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#7;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#8;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#9;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#10;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#11;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#13;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#14;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#11;n#div#2;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/less/constants.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/less/menu.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24538745">
+          <caret line="558" column="32" selection-start-line="558" selection-start-column="32" selection-end-line="558" selection-end-column="32" />
+          <folding>
+            <element signature="e#873#7328#0" expanded="false" />
+            <element signature="e#1476#1913#0" expanded="false" />
+            <element signature="e#1968#3491#0" expanded="false" />
+            <element signature="e#2062#2851#0" expanded="false" />
+            <element signature="e#3552#4605#0" expanded="false" />
+            <element signature="e#4660#6000#0" expanded="false" />
+            <element signature="e#6055#6835#0" expanded="false" />
+            <element signature="e#7375#7415#0" expanded="false" />
           </folding>
         </state>
       </provider>

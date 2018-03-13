@@ -6,8 +6,6 @@ $(document).ready(function() {
     function plus(i){
         var $input = $('.shopping_order_goods_quantity_value_'+i);
 
-
-
         $('.shopping_order_goods_quantity_plus_'+i).click(function () {
 
             $input.val(parseInt($input.val()) + 1);
@@ -18,7 +16,10 @@ $(document).ready(function() {
                 newPrice = totalPrice + orderPrice;
             $('.shopping_order_goods_total_value_'+i).text(newPrice.toFixed(2));
 
-
+            if (+$input.val() > 0) {
+                console.log('false')
+                $('.shopping_order_goods_quantity_minus_'+i).attr('disabled', false);
+            }
 
             return false;
         });
@@ -39,9 +40,8 @@ $(document).ready(function() {
                 newPrice = totalPrice - orderPrice;
             $('.shopping_order_goods_total_value_'+i).text(newPrice.toFixed(2));
 
-
-
             if (+$input.val() === 0) {
+                console.log('true')
                 $('.shopping_order_goods_quantity_minus_'+i).attr('disabled', true);
             }
 
@@ -50,9 +50,10 @@ $(document).ready(function() {
     }
 
     /*work counter of shopping basket order goods quantity*/
-    for(var i=1; i<4;i++){
+    for(var i=0; i<4;i++){
         plus(i);
         minus(i);
+
     }
 
 
